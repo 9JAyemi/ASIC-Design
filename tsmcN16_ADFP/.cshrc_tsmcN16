@@ -1,0 +1,24 @@
+############################################################################
+#
+# File     : cshrc file for eceelinux machines
+#
+############################################################################
+
+module load cadence/cadence
+module load synopsys/synopsys-prime
+module load synopsys/synopsys-dc
+module load siemens/questasim
+module load siemens/siemens
+module load cadence/innovus
+
+# CDS path of module cadence
+setenv CDSHOME /opt/cadence/IC231.007/
+setenv CDS_INST_DIR $CDSHOME
+setenv CDS $CDSHOME
+set path=($CDSHOME/bin $path)
+set path=($CDSHOME/tools/bin $path)
+set path=($CDSHOME/tools/dfII/bin $path)
+setenv CDS_Netlisting_Mode Analog
+
+
+setenv MGC_RVE_CTO_FILE $PWD/rve_vis_asap7.cto

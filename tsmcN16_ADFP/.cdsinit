@@ -1,0 +1,58 @@
+;;———————————————————————————————————————————————————————————————————————————————
+; Calibre interactive setup
+;;———————————————————————————————————————————————————————————————————————————————
+
+; check MGC_HOME
+
+mgc_home=getShellEnvVar("MGC_HOME")
+
+if( mgc_home!=nil && isDir(mgc_home) && isReadable(mgc_home) then
+
+    ; Load calibre.skl for Cadence versions 4.4 and greater
+
+    load(strcat(mgc_home "/lib/calibre.skl"))
+else
+
+    ; If MGC_HOME is not set correctly. Report the problem.
+
+    printf("//  Calibre Error: Environment variable ")
+
+    if( mgc_home==nil || mgc_home=="" then
+        printf("MGC_HOME is not set.");
+    else
+        if( !isDir(mgc_home) then
+            printf("MGC_HOME does not point to a directory.");
+        else
+            if( !isReadable(mgc_home) then
+                printf("MGC_HOME points to an unreadable directory.");
+            )
+        )
+    )
+    printf(" Calibre Skill Interface not loaded.\n")
+
+    ; Display a dialog box message about load failure.
+
+    hiDisplayAppDBox(
+        ?name           'MGCHOMEErrorDlg
+        ?dboxBanner     "Calibre Error"
+        ?dboxText       "Calibre Skill Interface not loaded."
+        ?dialogType     hicErrorDialog
+        ?dialogStyle    'modal
+        ?buttonLayout   'Close
+    )
+)
+
+printf( strcat(
+"--------------------------------------------------------------------------------\n"
+"#######   #####   #     #   #####   #     #     #       #### \n"
+"   #     #     #  ##   ##  #     #  ##    #    ##      #     \n"
+"   #     #        # # # #  #        # #   #   # #     #      \n"
+"   #      #####   #  #  #  #        #  #  #     #     ###### \n"
+"   #           #  #     #  #        #   # #     #     #     #\n"
+"   #     #     #  #     #  #     #  #    ##     #     #     #\n"
+"   #      #####   #     #   #####   #     #   #####    ##### \n"
+"--------------------------------------------------------------------------------\n"
+));
+
+
+ddsOpenLibManager()

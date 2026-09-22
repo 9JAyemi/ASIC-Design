@@ -1,0 +1,3 @@
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE tsmcN16 /classes/ece5746/tsmcN16/Executable_Package/Collaterals/Tech/iPDK/N16ADFP_iPDK/tsmcN16
