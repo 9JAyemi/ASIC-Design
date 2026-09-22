@@ -1,0 +1,13 @@
+ERROR: $OA_HOME is not set and the Cadence installation does not
+seem to have a valid default OA installation under
+/opt/cadence/PEGASUS232/share/oa
+Check your OA installation (you may need to re-run
+the post-install configure step for your Cadence tools), or set the
+OA_HOME variable to point to a valid OA installation.
+See the "OpenAccess Installation and Configuration Guide"
+for more information.
+pegasusgui:   ERROR: No proper OA2.2 installation found. Fix the errors reported by cdsGetOABinPath.
+pegasusgui:    INFO: Note that OpenAccess (OA) requires running the Configure phase.
+pegasusgui:          See the "OpenAccess Installation and Configuration Guide" before
+pegasusgui:          you complete the configuration step. This manual is included with
+pegasusgui:          the Cadence product documentation.

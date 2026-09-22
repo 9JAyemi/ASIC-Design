@@ -1,0 +1,157 @@
+\# Program start time:     UTC 2026.09.01 19:51:45.913
+\# Local time: EDT (UTC-04:00) 2026.09.01 15:51:45.913
+\o Program:		@(#)$CDS: Virtuoso Studio version IC23.1-64b 05/22/2024 07:43 (cpgbld16) $
+\o Hierarchy:		/opt/cadence/IC231.007/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC23.1-64b.ISR7.27  (64-bit addresses)
+\# Command line:	/opt/cadence/IC231.007/tools/dfII/bin/64bit/virtuoso
+\# Host name (type):	ecelinux-10.ece.cornell.edu (x86_64)
+\# Operating system:	Linux 4.18.0-553.151.1.el8_10.x86_64 #1 SMP Sun Aug 2 20:57:00 EDT 2026
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	localhost:10.0 (4480x1402)
+\# Available geometry:			TL(0:0) BR(4479:1401)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12101023)
+\# X resource pool:	base 0xa00000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        736 MB
+\# Available memory:	     30,087 MB
+\# System memory:	     35,982 MB
+\# Maximum memory size:	     35,420 MB
+\# Max mem available:	     30,261 MB
+\# Initial memory used:	        175 MB
+\#        process size:	      1,697 MB
+\# Thread usage limits (effective/default):	maxthreads 127308/127308 maxload 8.00/8.00
+\# Qt version:		5.15.9
+\# Window Manager:	other
+\# User Name:		ab3394
+\o Working Directory:	ecelinux-10.ece.cornell.edu:/home/ab3394/cornell_tech/asic_design_labs/tsmcN16_ADFP
+\# Process Id:		39392
+\o 
+\o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\# Available memory:         30,085 MB at UTC 2026.09.01 19:51:58.149
+\# Memory report: Maximum memory size now 30,292 MB at UTC 2026.09.01 19:51:58.149
+\# Thread usage report: 3 active threads, active load 1.00 at UTC 2026.09.01 19:51:58.149
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading im.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pegasusui.cxt
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\# Memory report: using         278 MB, process size 1,900 MB at UTC 2026.09.01 19:52:21.317
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\# Thread usage report: 7 active threads, active load 1.40 at UTC 2026.09.01 19:52:29.453
+\o Loading drv.cxt 
+\o Loading ams.cxt 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o Loading sipLayout.cxt 
+\o Loading diagCenter.cxt 
+\# [15:51:48.344001] Configured Lic search path (23.02-s006): 5280@en-license-05.coecis.cornell.edu
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
+\o //
+\o //  Calibre Skill Interface * (v2024.3_16.10) *
+\o //
+\o //                         Copyright Siemens 1996-2020     
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o --------------------------------------------------------------------------------
+\o #######   #####   #     #   #####   #     #     #       #### 
+\o    #     #     #  ##   ##  #     #  ##    #    ##      #     
+\o    #     #        # # # #  #        # #   #   # #     #      
+\o    #      #####   #  #  #  #        #  #  #     #     ###### 
+\o    #           #  #     #  #        #   # #     #     #     #
+\o    #     #     #  #     #  #     #  #    ##     #     #     #
+\o    #      #####   #     #   #####   #     #   #####    ##### 
+\o --------------------------------------------------------------------------------
+\p > 
+\o Loading le.cxt 
+\o Loading tilp.cxt 
+\o Loading validator.cxt 
+\o Loading vrf.cxt 
+\o Loading multiTechPlugin.cxt 
+\o Loading exportDie.cxt 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\o The Health Monitor tool is installed. You can access it from CIW - Tools - Diagnostic Center or use the shell command 'cdsPerfDiag -p 39392' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.
+\# Thread usage report: 8 active threads, active load 1.40 at UTC 2026.09.01 19:53:44.105
+\o Initializing from libInit.il for library tsmcN16...
+\o    --  tsmcN16_nmos_dnw.cxt
+\o    --  tsmcN16_nmos.cxt
+\o    --  tsmcN16_pmos.cxt
+\o    --  tsmcN16.cxt
+\o    --  tsmcN16_eq.cxt
+\o    --  load_apc_tsmc_n16.ile
+\o    --  apc_util.cdn
+\# Memory report: using         873 MB, process size 2,496 MB at UTC 2026.09.01 19:53:46.193
+\o    --  tsmc_n16.pce
+\o    --  tsmcPdkParamTable.ile
+\o    --  load_tsmc_n16_abut.ile
+\o    --  tsmc_n16_abut.cdn
+\o 	-- abutment:: layoutXL.chainDummyFlexBothEndNets is set to t
+\o 	-- abutment:: layoutXL.abuttedPcellParamUpdate is set to t
+\o 	-- abutment:: layoutXL.abutChainEvent is set to t
+\o    --  load_apc_FGR.ile
+\o    --  FGR.pce
+\o Loading vfoCmd.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading spectrei.cxt 
+\o Loading adexlCore.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexl.cxt 
+\o Loading vdsil.cxt 
+\o Loading te.cxt 
+\o Loading schHDL.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o Loading Working place Display File '/home/ab3394/cornell_tech/asic_design_labs/tsmcN16_ADFP/display.drf'
+\o "**Error**Error**Error**Error**Error**Error**Error**Error**Error**Error**Error"
+\o "**Error**Error**Error**Error**Error**Error**Error**Error**Error**Error**Error"
+\o "**Error                                                               **Error"
+\o "**Error                  Please Install PDK first!!!!!                **Error"
+\o "**Error                                                               **Error"
+\o "**Error**Error**Error**Error**Error**Error**Error**Error**Error**Error**Error"
+\o "**Error**Error**Error**Error**Error**Error**Error**Error**Error**Error**Error"
+\# Memory report: Maximum memory size now 30,888 MB at UTC 2026.09.01 19:53:54.105
