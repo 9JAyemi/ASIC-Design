@@ -1,0 +1,2641 @@
+1
+ 
+****************************************
+Report : design
+Design : mult
+Version: V-2023.12-SP5
+Date   : Wed Sep 23 13:16:05 2026
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    N16ADFP_StdCelltt0p8v25c (File: /classes/ece5746/tsmcN16/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/N16ADFP_StdCelltt0p8v25c.db)
+
+Local Link Library:
+
+    {N16ADFP_StdCelltt0p8v25c.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : tt0p8v25c
+    Library : N16ADFP_StdCelltt0p8v25c
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   0.80
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected automatically from the total cell area.
+
+Name           :   ZeroWireload
+Location       :   N16ADFP_StdCelltt0p8v25c
+Resistance     :   1e-05
+Capacitance    :   1
+Area           :   0
+Slope          :   0
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     0.00
+     2     0.00
+     3     0.00
+     4     0.00
+     5     0.00
+     6     0.00
+     7     0.00
+     8     0.00
+     9     0.00
+    10     0.00
+    11     0.00
+    12     0.00
+    13     0.00
+    14     0.00
+    15     0.00
+    16     0.00
+    17     0.00
+    18     0.00
+    19     0.00
+    20     0.00
+
+
+
+Wire Loading Model Mode: segmented.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    DesignWare
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : cell
+Design : mult
+Version: V-2023.12-SP5
+Date   : Wed Sep 23 13:16:05 2026
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U35                       XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U36                       XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U37                       XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U38                       XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U39                       XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U40                       XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U41                       XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U42                       XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U43                       XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U44                       XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U45                       XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U46                       INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U47                       INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U48                       XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U49                       XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U50                       INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U51                       AOI21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U52                       XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U53                       XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U54                       INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U55                       INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U56                       AN2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U57                       AN2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U58                       AN2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U59                       INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U60                       NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U61                       FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U62                       AN2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U63                       NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U64                       XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U65                       XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U66                       XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U67                       XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U68                       CKND2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U69                       ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U70                       ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U71                       ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U72                       NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U73                       ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U74                       ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U75                       NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U76                       ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U77                       NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U78                       ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U79                       ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U80                       ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U81                       ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U82                       ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U83                       ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U84                       ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U85                       NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U86                       ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U87                       ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U88                       FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U89                       ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U90                       NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U91                       NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U92                       NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U93                       NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U94                       AN2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U95                       AN2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U96                       XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U97                       XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U98                       XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U99                       XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U100                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U101                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U102                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U103                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U104                      CKND2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U105                      IND2D2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.362880  
+U106                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U107                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U108                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U109                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U110                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U111                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U112                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U113                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U114                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U115                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U116                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U117                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U118                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U119                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U120                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U121                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U122                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U123                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U124                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U125                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U126                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U127                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U128                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U129                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U130                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U131                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U132                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U133                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U134                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U135                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U136                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U137                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U138                      XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U139                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U140                      OR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U141                      HA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.881280  r
+U142                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U143                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U144                      HA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.881280  r
+U145                      HA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.881280  r
+U146                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U147                      HA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.881280  r
+U148                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U149                      HA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.881280  r
+U150                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U151                      HA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.881280  r
+U152                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U153                      HA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.881280  r
+U154                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U155                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U156                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U157                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U158                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U159                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U160                      AN2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U161                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U162                      XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U163                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U164                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U165                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U166                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U167                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U168                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U169                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U170                      AN2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U171                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U172                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U173                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U174                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U175                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U176                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U177                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U178                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U179                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U180                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U181                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U182                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U183                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U184                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U185                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U186                      XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U187                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U188                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U189                      XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U190                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U191                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U192                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U193                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U194                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U195                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U196                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U197                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U198                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U199                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U200                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U201                      XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U202                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U203                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U204                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U205                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U206                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U207                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U208                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U209                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U210                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U211                      XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U212                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U213                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U214                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U215                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U216                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U217                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U218                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U219                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U220                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U221                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U222                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U223                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U224                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U225                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U226                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U227                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U228                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U229                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U230                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U231                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U232                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U233                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U234                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U235                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U236                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U237                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U238                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U239                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U240                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U241                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U242                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U243                      CKND2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U244                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U245                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U246                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U247                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U248                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U249                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U250                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U251                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U252                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U253                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U254                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U255                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U256                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U257                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U258                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U259                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U260                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U261                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U262                      CKBD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U263                      CKBD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U264                      CKBD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U265                      CKBD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U266                      XNR2D2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.570240  
+U267                      XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U268                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U269                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U270                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U271                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U272                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U273                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U274                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U275                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U276                      BUFFD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U277                      CKBD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U278                      AOI21D4BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.725760  
+U279                      OAI21D4BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.725760  
+U280                      AOI21D4BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.725760  
+U281                      OAI21D4BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.725760  
+U282                      AOI21D4BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.725760  
+U283                      OAI21D4BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.725760  
+U284                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U285                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U286                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U287                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U288                      XNR2D4BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.881280  
+U289                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U290                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U291                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U292                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U293                      XNR2D4BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.881280  
+U294                      AN2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U295                      OR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U296                      OA21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U297                      OR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U298                      OR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U299                      OR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U300                      OR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U301                      OR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U302                      OR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U303                      OR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U304                      OR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U305                      OR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U306                      OR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U307                      OR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U308                      OR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U309                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U310                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U311                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U312                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U313                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U314                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U315                      XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U316                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U317                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U318                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U319                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U320                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U321                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U322                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U323                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U324                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U325                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U326                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U327                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U328                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U329                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U330                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U331                      AO21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U332                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U333                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U334                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U335                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U336                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U337                      AO21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U338                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U339                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U340                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U341                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U342                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U343                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U344                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U345                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U346                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U347                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U348                      AO21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U349                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U350                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U351                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U352                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U353                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U354                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U355                      IND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U356                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U357                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U358                      INR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U359                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U360                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U361                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U362                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U363                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U364                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U365                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U366                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U367                      INR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U368                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U369                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U370                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U371                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U372                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U373                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U374                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U375                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U376                      IND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U377                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U378                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U379                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U380                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U381                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U382                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U383                      IND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U384                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U385                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U386                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U387                      INR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U388                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U389                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U390                      AOI21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U391                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U392                      OAI21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U393                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U394                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U395                      AOI21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U396                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U397                      OAI21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U398                      IND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U399                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U400                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U401                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U402                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U403                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U404                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U405                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U406                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U407                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U408                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U409                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U410                      AOI21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U411                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U412                      INR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U413                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U414                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U415                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U416                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U417                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U418                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U419                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U420                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U421                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U422                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U423                      OAI21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U424                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U425                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U426                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U427                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U428                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U429                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U430                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U431                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U432                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U433                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U434                      IND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U435                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U436                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U437                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U438                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U439                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U440                      AOI21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U441                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U442                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U443                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U444                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U445                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U446                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U447                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U448                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U449                      INR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U450                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U451                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U452                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U453                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U454                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U455                      OAI21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U456                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U457                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U458                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U459                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U460                      IND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U461                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U462                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U463                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U464                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U465                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U466                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U467                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U468                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U469                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U470                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U471                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U472                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U473                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U474                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U475                      AOI21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U476                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U477                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U478                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U479                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U480                      INR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U481                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U482                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U483                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U484                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U485                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U486                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U487                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U488                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U489                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U490                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U491                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U492                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U493                      OAI21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U494                      IND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U495                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U496                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U497                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U498                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U499                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U500                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U501                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U502                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U503                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U504                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U505                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U506                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U507                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U508                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U509                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U510                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U511                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U512                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U513                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U514                      AOI21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U515                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U516                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U517                      INR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U518                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U519                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U520                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U521                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U522                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U523                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U524                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U525                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U526                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U527                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U528                      OAI21D2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.414720  
+U529                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U530                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U531                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U532                      IND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U533                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U534                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U535                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U536                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U537                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U538                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U539                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U540                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U541                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U542                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U543                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U544                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U545                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U546                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U547                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U548                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U549                      INR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U550                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U551                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U552                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U553                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U554                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U555                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U556                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U557                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U558                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U559                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U560                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U561                      OAI21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U562                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U563                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U564                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U565                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U566                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U567                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U568                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U569                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U570                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U571                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U572                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U573                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U574                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U575                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U576                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U577                      AOI21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U578                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U579                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U580                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U581                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U582                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U583                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U584                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U585                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U586                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U587                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U588                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U589                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U590                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U591                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U592                      OAI21D2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.414720  
+U593                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U594                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U595                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U596                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U597                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U598                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U599                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U600                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U601                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U602                      AO21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U603                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U604                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U605                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U606                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U607                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U608                      AOI21D2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.414720  
+U609                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U610                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U611                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U612                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U613                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U614                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U615                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U616                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U617                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U618                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U619                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U620                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U621                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U622                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U623                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U624                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U625                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U626                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U627                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U628                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U629                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U630                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U631                      AO21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U632                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U633                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U634                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U635                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U636                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U637                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U638                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U639                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U640                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U641                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U642                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U643                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U644                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U645                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U646                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U647                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U648                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U649                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U650                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U651                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U652                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U653                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U654                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U655                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U656                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U657                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U658                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U659                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U660                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U661                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U662                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U663                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U664                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U665                      OAI21D2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.414720  
+U666                      ND2D2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U667                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U668                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U669                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U670                      AO21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U671                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U672                      FA1D4BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.658880  r
+U673                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U674                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U675                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U676                      OAI22D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U677                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U678                      FA1D4BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.658880  r
+U679                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U680                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U681                      NR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U682                      AO21D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.311040  
+U683                      XOR3D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.984960  
+U684                      XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U685                      FA1D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.036800  r
+U686                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U687                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U688                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U689                      XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U690                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U691                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U692                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U693                      XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U694                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U695                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U696                      XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U697                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U698                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U699                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U700                      XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U701                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U702                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U703                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U704                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U705                      XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U706                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U707                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U708                      XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U709                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U710                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U711                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U712                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U713                      XOR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U714                      ND2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U715                      XNR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.518400  
+U716                      INR2D1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.259200  
+U717                      INVD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.155520  
+U718                      CKBD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+U719                      CKBD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          0.207360  
+prod_reg[0]               DFCNQD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[1]               DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[2]               DFCNQD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[3]               DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[4]               DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[5]               DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[6]               DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[7]               DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[8]               DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[9]               DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[10]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[11]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[12]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[13]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[14]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[15]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[16]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[17]              DFCNQD1BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[18]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[19]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[20]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[21]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[22]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[23]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[24]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[25]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[26]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[27]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[28]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[29]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[30]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+prod_reg[31]              DFCNQD2BWP16P90LVT
+                                          N16ADFP_StdCelltt0p8v25c
+                                                          1.140480  n
+--------------------------------------------------------------------------------
+Total 717 cells                                           350.282890
+1
+ 
+****************************************
+Report : port
+        -verbose
+Design : mult
+Version: V-2023.12-SP5
+Date   : Wed Sep 23 13:16:05 2026
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+clk            in      0.0000   0.0000    0.40    0.07   --         d
+inp_a[0]       in      0.0000   0.0000    0.40    0.07   --         
+inp_a[1]       in      0.0000   0.0000    0.40    0.07   --         
+inp_a[2]       in      0.0000   0.0000    0.40    0.07   --         
+inp_a[3]       in      0.0000   0.0000    0.40    0.07   --         
+inp_a[4]       in      0.0000   0.0000    0.40    0.07   --         
+inp_a[5]       in      0.0000   0.0000    0.40    0.07   --         
+inp_a[6]       in      0.0000   0.0000    0.40    0.07   --         
+inp_a[7]       in      0.0000   0.0000    0.40    0.07   --         
+inp_a[8]       in      0.0000   0.0000    0.40    0.07   --         
+inp_a[9]       in      0.0000   0.0000    0.40    0.07   --         
+inp_a[10]      in      0.0000   0.0000    0.40    0.07   --         
+inp_a[11]      in      0.0000   0.0000    0.40    0.07   --         
+inp_a[12]      in      0.0000   0.0000    0.40    0.07   --         
+inp_a[13]      in      0.0000   0.0000    0.40    0.07   --         
+inp_a[14]      in      0.0000   0.0000    0.40    0.07   --         
+inp_a[15]      in      0.0000   0.0000    0.40    0.07   --         
+inp_b[0]       in      0.0000   0.0000    0.40    0.07   --         
+inp_b[1]       in      0.0000   0.0000    0.40    0.07   --         
+inp_b[2]       in      0.0000   0.0000    0.40    0.07   --         
+inp_b[3]       in      0.0000   0.0000    0.40    0.07   --         
+inp_b[4]       in      0.0000   0.0000    0.40    0.07   --         
+inp_b[5]       in      0.0000   0.0000    0.40    0.07   --         
+inp_b[6]       in      0.0000   0.0000    0.40    0.07   --         
+inp_b[7]       in      0.0000   0.0000    0.40    0.07   --         
+inp_b[8]       in      0.0000   0.0000    0.40    0.07   --         
+inp_b[9]       in      0.0000   0.0000    0.40    0.07   --         
+inp_b[10]      in      0.0000   0.0000    0.40    0.07   --         
+inp_b[11]      in      0.0000   0.0000    0.40    0.07   --         
+inp_b[12]      in      0.0000   0.0000    0.40    0.07   --         
+inp_b[13]      in      0.0000   0.0000    0.40    0.07   --         
+inp_b[14]      in      0.0000   0.0000    0.40    0.07   --         
+inp_b[15]      in      0.0000   0.0000    0.40    0.07   --         
+rst            in      0.0000   0.0000    0.40    0.07   --         
+prod[0]        out     0.0100   0.0000   --      --      --         
+prod[1]        out     0.0100   0.0000   --      --      --         
+prod[2]        out     0.0100   0.0000   --      --      --         
+prod[3]        out     0.0100   0.0000   --      --      --         
+prod[4]        out     0.0100   0.0000   --      --      --         
+prod[5]        out     0.0100   0.0000   --      --      --         
+prod[6]        out     0.0100   0.0000   --      --      --         
+prod[7]        out     0.0100   0.0000   --      --      --         
+prod[8]        out     0.0100   0.0000   --      --      --         
+prod[9]        out     0.0100   0.0000   --      --      --         
+prod[10]       out     0.0100   0.0000   --      --      --         
+prod[11]       out     0.0100   0.0000   --      --      --         
+prod[12]       out     0.0100   0.0000   --      --      --         
+prod[13]       out     0.0100   0.0000   --      --      --         
+prod[14]       out     0.0100   0.0000   --      --      --         
+prod[15]       out     0.0100   0.0000   --      --      --         
+prod[16]       out     0.0100   0.0000   --      --      --         
+prod[17]       out     0.0100   0.0000   --      --      --         
+prod[18]       out     0.0100   0.0000   --      --      --         
+prod[19]       out     0.0100   0.0000   --      --      --         
+prod[20]       out     0.0100   0.0000   --      --      --         
+prod[21]       out     0.0100   0.0000   --      --      --         
+prod[22]       out     0.0100   0.0000   --      --      --         
+prod[23]       out     0.0100   0.0000   --      --      --         
+prod[24]       out     0.0100   0.0000   --      --      --         
+prod[25]       out     0.0100   0.0000   --      --      --         
+prod[26]       out     0.0100   0.0000   --      --      --         
+prod[27]       out     0.0100   0.0000   --      --      --         
+prod[28]       out     0.0100   0.0000   --      --      --         
+prod[29]       out     0.0100   0.0000   --      --      --         
+prod[30]       out     0.0100   0.0000   --      --      --         
+prod[31]       out     0.0100   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+clk                1      --              --              --        -- 
+inp_a[0]           1      --              --              --        -- 
+inp_a[1]           1      --              --              --        -- 
+inp_a[2]           1      --              --              --        -- 
+inp_a[3]           1      --              --              --        -- 
+inp_a[4]           1      --              --              --        -- 
+inp_a[5]           1      --              --              --        -- 
+inp_a[6]           1      --              --              --        -- 
+inp_a[7]           1      --              --              --        -- 
+inp_a[8]           1      --              --              --        -- 
+inp_a[9]           1      --              --              --        -- 
+inp_a[10]          1      --              --              --        -- 
+inp_a[11]          1      --              --              --        -- 
+inp_a[12]          1      --              --              --        -- 
+inp_a[13]          1      --              --              --        -- 
+inp_a[14]          1      --              --              --        -- 
+inp_a[15]          1      --              --              --        -- 
+inp_b[0]           1      --              --              --        -- 
+inp_b[1]           1      --              --              --        -- 
+inp_b[2]           1      --              --              --        -- 
+inp_b[3]           1      --              --              --        -- 
+inp_b[4]           1      --              --              --        -- 
+inp_b[5]           1      --              --              --        -- 
+inp_b[6]           1      --              --              --        -- 
+inp_b[7]           1      --              --              --        -- 
+inp_b[8]           1      --              --              --        -- 
+inp_b[9]           1      --              --              --        -- 
+inp_b[10]          1      --              --              --        -- 
+inp_b[11]          1      --              --              --        -- 
+inp_b[12]          1      --              --              --        -- 
+inp_b[13]          1      --              --              --        -- 
+inp_b[14]          1      --              --              --        -- 
+inp_b[15]          1      --              --              --        -- 
+rst                1      --              --              --        -- 
+prod[0]            1      --              --              --        -- 
+prod[1]            1      --              --              --        -- 
+prod[2]            1      --              --              --        -- 
+prod[3]            1      --              --              --        -- 
+prod[4]            1      --              --              --        -- 
+prod[5]            1      --              --              --        -- 
+prod[6]            1      --              --              --        -- 
+prod[7]            1      --              --              --        -- 
+prod[8]            1      --              --              --        -- 
+prod[9]            1      --              --              --        -- 
+prod[10]           1      --              --              --        -- 
+prod[11]           1      --              --              --        -- 
+prod[12]           1      --              --              --        -- 
+prod[13]           1      --              --              --        -- 
+prod[14]           1      --              --              --        -- 
+prod[15]           1      --              --              --        -- 
+prod[16]           1      --              --              --        -- 
+prod[17]           1      --              --              --        -- 
+prod[18]           1      --              --              --        -- 
+prod[19]           1      --              --              --        -- 
+prod[20]           1      --              --              --        -- 
+prod[21]           1      --              --              --        -- 
+prod[22]           1      --              --              --        -- 
+prod[23]           1      --              --              --        -- 
+prod[24]           1      --              --              --        -- 
+prod[25]           1      --              --              --        -- 
+prod[26]           1      --              --              --        -- 
+prod[27]           1      --              --              --        -- 
+prod[28]           1      --              --              --        -- 
+prod[29]           1      --              --              --        -- 
+prod[30]           1      --              --              --        -- 
+prod[31]           1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+clk           --      --      --      --      --      -- 
+inp_a[0]      0.01    0.01    0.01    0.01  clk       --    
+inp_a[1]      0.01    0.01    0.01    0.01  clk       --    
+inp_a[2]      0.01    0.01    0.01    0.01  clk       --    
+inp_a[3]      0.01    0.01    0.01    0.01  clk       --    
+inp_a[4]      0.01    0.01    0.01    0.01  clk       --    
+inp_a[5]      0.01    0.01    0.01    0.01  clk       --    
+inp_a[6]      0.01    0.01    0.01    0.01  clk       --    
+inp_a[7]      0.01    0.01    0.01    0.01  clk       --    
+inp_a[8]      0.01    0.01    0.01    0.01  clk       --    
+inp_a[9]      0.01    0.01    0.01    0.01  clk       --    
+inp_a[10]     0.01    0.01    0.01    0.01  clk       --    
+inp_a[11]     0.01    0.01    0.01    0.01  clk       --    
+inp_a[12]     0.01    0.01    0.01    0.01  clk       --    
+inp_a[13]     0.01    0.01    0.01    0.01  clk       --    
+inp_a[14]     0.01    0.01    0.01    0.01  clk       --    
+inp_a[15]     0.01    0.01    0.01    0.01  clk       --    
+inp_b[0]      0.01    0.01    0.01    0.01  clk       --    
+inp_b[1]      0.01    0.01    0.01    0.01  clk       --    
+inp_b[2]      0.01    0.01    0.01    0.01  clk       --    
+inp_b[3]      0.01    0.01    0.01    0.01  clk       --    
+inp_b[4]      0.01    0.01    0.01    0.01  clk       --    
+inp_b[5]      0.01    0.01    0.01    0.01  clk       --    
+inp_b[6]      0.01    0.01    0.01    0.01  clk       --    
+inp_b[7]      0.01    0.01    0.01    0.01  clk       --    
+inp_b[8]      0.01    0.01    0.01    0.01  clk       --    
+inp_b[9]      0.01    0.01    0.01    0.01  clk       --    
+inp_b[10]     0.01    0.01    0.01    0.01  clk       --    
+inp_b[11]     0.01    0.01    0.01    0.01  clk       --    
+inp_b[12]     0.01    0.01    0.01    0.01  clk       --    
+inp_b[13]     0.01    0.01    0.01    0.01  clk       --    
+inp_b[14]     0.01    0.01    0.01    0.01  clk       --    
+inp_b[15]     0.01    0.01    0.01    0.01  clk       --    
+rst           0.01    0.01    0.01    0.01  clk       --    
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+clk          INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_a[0]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_a[1]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_a[2]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_a[3]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_a[4]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_a[5]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_a[6]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_a[7]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_a[8]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_a[9]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_a[10]    INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_a[11]    INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_a[12]    INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_a[13]    INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_a[14]    INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_a[15]    INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_b[0]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_b[1]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_b[2]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_b[3]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_b[4]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_b[5]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_b[6]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_b[7]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_b[8]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_b[9]     INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_b[10]    INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_b[11]    INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_b[12]    INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_b[13]    INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_b[14]    INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+inp_b[15]    INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+rst          INVD1BWP20P90      INVD1BWP20P90        -- /  --     
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+clk           --      --     --      --     --      --     --     --        -- 
+inp_a[0]      --      --     --      --     --      --     --     --        -- 
+inp_a[1]      --      --     --      --     --      --     --     --        -- 
+inp_a[2]      --      --     --      --     --      --     --     --        -- 
+inp_a[3]      --      --     --      --     --      --     --     --        -- 
+inp_a[4]      --      --     --      --     --      --     --     --        -- 
+inp_a[5]      --      --     --      --     --      --     --     --        -- 
+inp_a[6]      --      --     --      --     --      --     --     --        -- 
+inp_a[7]      --      --     --      --     --      --     --     --        -- 
+inp_a[8]      --      --     --      --     --      --     --     --        -- 
+inp_a[9]      --      --     --      --     --      --     --     --        -- 
+inp_a[10]     --      --     --      --     --      --     --     --        -- 
+inp_a[11]     --      --     --      --     --      --     --     --        -- 
+inp_a[12]     --      --     --      --     --      --     --     --        -- 
+inp_a[13]     --      --     --      --     --      --     --     --        -- 
+inp_a[14]     --      --     --      --     --      --     --     --        -- 
+inp_a[15]     --      --     --      --     --      --     --     --        -- 
+inp_b[0]      --      --     --      --     --      --     --     --        -- 
+inp_b[1]      --      --     --      --     --      --     --     --        -- 
+inp_b[2]      --      --     --      --     --      --     --     --        -- 
+inp_b[3]      --      --     --      --     --      --     --     --        -- 
+inp_b[4]      --      --     --      --     --      --     --     --        -- 
+inp_b[5]      --      --     --      --     --      --     --     --        -- 
+inp_b[6]      --      --     --      --     --      --     --     --        -- 
+inp_b[7]      --      --     --      --     --      --     --     --        -- 
+inp_b[8]      --      --     --      --     --      --     --     --        -- 
+inp_b[9]      --      --     --      --     --      --     --     --        -- 
+inp_b[10]     --      --     --      --     --      --     --     --        -- 
+inp_b[11]     --      --     --      --     --      --     --     --        -- 
+inp_b[12]     --      --     --      --     --      --     --     --        -- 
+inp_b[13]     --      --     --      --     --      --     --     --        -- 
+inp_b[14]     --      --     --      --     --      --     --     --        -- 
+inp_b[15]     --      --     --      --     --      --     --     --        -- 
+rst           --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+clk           --      --      --      -- 
+inp_a[0]      --      --      --      -- 
+inp_a[1]      --      --      --      -- 
+inp_a[2]      --      --      --      -- 
+inp_a[3]      --      --      --      -- 
+inp_a[4]      --      --      --      -- 
+inp_a[5]      --      --      --      -- 
+inp_a[6]      --      --      --      -- 
+inp_a[7]      --      --      --      -- 
+inp_a[8]      --      --      --      -- 
+inp_a[9]      --      --      --      -- 
+inp_a[10]     --      --      --      -- 
+inp_a[11]     --      --      --      -- 
+inp_a[12]     --      --      --      -- 
+inp_a[13]     --      --      --      -- 
+inp_a[14]     --      --      --      -- 
+inp_a[15]     --      --      --      -- 
+inp_b[0]      --      --      --      -- 
+inp_b[1]      --      --      --      -- 
+inp_b[2]      --      --      --      -- 
+inp_b[3]      --      --      --      -- 
+inp_b[4]      --      --      --      -- 
+inp_b[5]      --      --      --      -- 
+inp_b[6]      --      --      --      -- 
+inp_b[7]      --      --      --      -- 
+inp_b[8]      --      --      --      -- 
+inp_b[9]      --      --      --      -- 
+inp_b[10]     --      --      --      -- 
+inp_b[11]     --      --      --      -- 
+inp_b[12]     --      --      --      -- 
+inp_b[13]     --      --      --      -- 
+inp_b[14]     --      --      --      -- 
+inp_b[15]     --      --      --      -- 
+rst           --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+prod[0]       0.01    0.01    0.01    0.01  clk       0.00  
+prod[1]       0.01    0.01    0.01    0.01  clk       0.00  
+prod[2]       0.01    0.01    0.01    0.01  clk       0.00  
+prod[3]       0.01    0.01    0.01    0.01  clk       0.00  
+prod[4]       0.01    0.01    0.01    0.01  clk       0.00  
+prod[5]       0.01    0.01    0.01    0.01  clk       0.00  
+prod[6]       0.01    0.01    0.01    0.01  clk       0.00  
+prod[7]       0.01    0.01    0.01    0.01  clk       0.00  
+prod[8]       0.01    0.01    0.01    0.01  clk       0.00  
+prod[9]       0.01    0.01    0.01    0.01  clk       0.00  
+prod[10]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[11]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[12]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[13]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[14]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[15]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[16]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[17]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[18]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[19]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[20]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[21]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[22]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[23]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[24]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[25]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[26]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[27]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[28]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[29]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[30]      0.01    0.01    0.01    0.01  clk       0.00  
+prod[31]      0.01    0.01    0.01    0.01  clk       0.00  
+
+1
+ 
+****************************************
+Report : compile_options
+Design : mult
+Version: V-2023.12-SP5
+Date   : Wed Sep 23 13:16:05 2026
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+mult                                     flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         isolate_port           disabled
+                                         multibit_options
+                                           optimization_mode    non_timing_driven
+                                           minimum_width        2
+                                           exclude_registers_with_timing_exceptions false
+--------------------------------------------------------------------------------
+1

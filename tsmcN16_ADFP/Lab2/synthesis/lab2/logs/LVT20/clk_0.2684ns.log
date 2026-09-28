@@ -1,0 +1,554 @@
+Current time:       Tue Sep 22 19:29:19 2026
+Hostname:           ecelinux-01.ece.cornell.edu
+CPU Model:          Intel(R) Xeon(R) Platinum 8358 CPU @ 2.60GHz
+CPU Details:        Cores = 8 : Sockets = 1 : Cache Size = 49152 KB : Freq = 2.60 GHz
+OS:                 Linux 4.18.0-553.158.1.el8_10.x86_64
+RAM:                 31 GB (Free  13 GB)
+Swap:                 3 GB (Free   3 GB)
+Work Filesystem:    /home mounted to en-ec-nfs22-rhel.coecis.cornell.edu:/home
+Tmp Filesystem:     /tmp mounted to /dev/mapper/VG00-tmp
+Work Disk:          10218 GB (Free 2066 GB)
+Tmp Disk:            14 GB (Free  14 GB)
+
+CPU Load: 32%, Ram Free: 13 GB, Swap Free: 3 GB, Work Disk Free: 2066 GB, Tmp Disk Free: 14 GB
+# disclaimer: All the values given here are just for illustrative purpose
+# Change all the path according to your run directory
+# Please go through the file before sourcing it
+# Try to run all the command one by one at least for the first time
+# Initial setup
+set_host_options -max_cores 8
+Warning: You requested 8 cores. However, load on host ecelinux-01.ece.cornell.edu is 2.32. Tool will ignore the request and use 6 cores. (UIO-231)
+1
+set_units -time ns
+1
+source -continue_on_error ./suppress_message.tcl
+1
+# tsmcN16 lib
+set search_path [list "/classes/ece5746/tsmcN16/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/" ]
+/classes/ece5746/tsmcN16/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/
+set link_library "* N16ADFP_StdCelltt0p8v25c.db"
+* N16ADFP_StdCelltt0p8v25c.db
+set target_library "N16ADFP_StdCelltt0p8v25c.db"
+N16ADFP_StdCelltt0p8v25c.db
+# ################################# DESIGN SPECIFIC ###################################################
+# TOP_LEVEL_NAME
+set top_level                   "mult"
+mult
+# PATH TO YOUR VERILOG NETLIST
+set netlist_search_path "../../rtl"
+../../rtl
+# NETLIST NAME > list of RTL files in design. 
+set netlist_name "mul.sv"
+mul.sv
+# verilog format <verilog|sverilog|vhdl>
+set file_type "sverilog"
+sverilog
+# ################################################################################################
+# CLOCK PERIOD
+set clk_period                  $::env(CLK_PERIOD)
+0.2684
+# Read verilog files
+#analyze -format $file_type $netlist_search_path/$netlist_name
+foreach i $netlist_name {
+analyze -format $file_type $netlist_search_path/$i
+}
+Running PRESTO HDLC
+Compiling source file ../../rtl/mul.sv
+Presto compilation completed successfully.
+Loading db file '/classes/ece5746/tsmcN16/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/N16ADFP_StdCelltt0p8v25c.db'
+elaborate $top_level
+Loading db file '/opt/synopsys/syn/V-2023.12-SP5/libraries/syn/gtech.db'
+Loading db file '/opt/synopsys/syn/V-2023.12-SP5/libraries/syn/standard.sldb'
+  Loading link library 'N16ADFP_StdCelltt0p8v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+        in routine mult line 6 in file
+                '../../rtl/mul.sv'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      prod_reg       | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mult)
+Elaborated 1 design.
+Current design is now 'mult'.
+1
+list_designs
+mult (*)
+1
+current_design $top_level
+Current design is 'mult'.
+{mult}
+if {![info exists ::env(CELL_GROUP)]} {
+    puts "CELL_GROUP not set"; exit 1
+}
+set grp $::env(CELL_GROUP)
+LVT20
+switch -- $grp {
+    LVT16 { set_target_library_subset -use [list *BWP16*LVT]}
+    LVT20 { set_target_library_subset -use [list *BWP20*LVT]}
+    SVT20 { set_target_library_subset -dont_use [list *LVT* *BWP16*] }
+    default { puts "Bad CELL_GROUP: $grp"; exit 1 }
+}
+Information: 'GBUFFMCOD1BWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GBUFFMCOD2BWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GBUFFMCOD4BWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GBUFFMCOD8BWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP10MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP11MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP12MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP1MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP2MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP3MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP4MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP5MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP6MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP8MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP9MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL10MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL11MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL12MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL1MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL2MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL3MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL4MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL5MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL6MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL8MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL9MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GINVMCOD1BWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GINVMCOD2BWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GINVMCOD4BWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GINVMCOD8BWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+1
+#Create real clock if clock port is found
+if {[sizeof_collection [get_ports clk]] > 0} {
+  set clk_name "clk"
+  set clk_port "clk"
+  #If no waveform is specified, 50% duty cycle is assumed
+  create_clock -name $clk_name -period $clk_period [get_ports $clk_port] 
+  set_drive 0 [get_clocks $clk_name] 
+}
+1
+set_clock_uncertainty 0.01 [get_clocks $clk_name]
+1
+set_clock_transition 0.1 [get_clocks $clk_name]
+1
+set_wire_load_mode "segmented" 
+1
+set typical_input_delay 0.010
+0.010
+set typical_output_delay 0.010
+0.010
+set typical_wire_load 0.010 
+0.010
+# Set maximum fanout of gates
+set_max_fanout 16 $top_level 
+1
+# Configure the clock network
+set_fix_hold [all_clocks] 
+1
+set_dont_touch_network $clk_port 
+1
+set_driving_cell -lib_cell INVD1BWP20P90 [all_inputs]
+1
+set_input_delay $typical_input_delay [all_inputs] -clock $clk_name 
+1
+remove_input_delay -clock $clk_name [find port $clk_port]
+1
+set_output_delay $typical_output_delay [all_outputs] -clock $clk_name 
+1
+# Set loading of outputs 
+set_load $typical_wire_load [all_outputs] 
+1
+# Verify the design
+check_design
+ 
+****************************************
+check_design summary:
+Version:     V-2023.12-SP5
+Date:        Tue Sep 22 19:29:21 2026
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               1
+    Cells do not drive (LINT-1)                                     1
+--------------------------------------------------------------------------------
+
+Warning: In design 'mult', cell 'B_0' does not drive any nets. (LINT-1)
+1
+# Synthesize the design
+compile_ultra
+Loading db file '/opt/synopsys/syn/V-2023.12-SP5/libraries/syn/dw_foundation.sldb'
+Information: Failed to find dw_foundation.sldb in the user defined search_path, load it from 'Synopsys Root'. (UISN-70)
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing leakage power optimization. (PWR-850)
+CPU Load: 31%, Ram Free: 13 GB, Swap Free: 3 GB, Work Disk Free: 2066 GB, Tmp Disk Free: 14 GB
+Alib files are up-to-date.
+Information: Running optimization using a maximum of 6 cores. (OPT-1500)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | V-2023.12-DWBB_202312.5 |     *     |
+| Licensed DW Building Blocks        | V-2023.12-DWBB_202312.5 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Command Line | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 35                                     |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 32                                     |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 1                                      |
+| Number of Dont Touch Nets                               | 1                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'mult'
+
+Information: 'GBUFFMCOD1BWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GBUFFMCOD2BWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GBUFFMCOD4BWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GBUFFMCOD8BWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP10MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP11MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP12MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP1MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP2MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP3MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP4MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP5MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP6MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP8MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GDCAP9MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL10MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL11MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL12MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL1MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL2MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL3MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL4MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL5MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL6MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL8MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GFILL9MCOBWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GINVMCOD1BWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GINVMCOD2BWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GINVMCOD4BWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Information: 'GINVMCOD8BWP20P90LVT' appears in set_target_library_subset -use, but this lib_cell has 
+attribute dont_use in library N16ADFP_StdCelltt0p8v25c.  The lib_cell will not be used. (LIBSETUP-138)
+Loaded alib file './alib-52/N16ADFP_StdCelltt0p8v25c.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+CPU Load: 29%, Ram Free: 13 GB, Swap Free: 3 GB, Work Disk Free: 2066 GB, Tmp Disk Free: 14 GB
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'mult'
+ Implement Synthetic for 'mult'.
+CPU Load: 29%, Ram Free: 13 GB, Swap Free: 3 GB, Work Disk Free: 2066 GB, Tmp Disk Free: 14 GB
+
+  Updating timing information
+Information: The library cell 'TIELBWP20P90LVT' in the library 'N16ADFP_StdCelltt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIELBWP20P90' in the library 'N16ADFP_StdCelltt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIELBWP16P90LVT' in the library 'N16ADFP_StdCelltt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIELBWP16P90' in the library 'N16ADFP_StdCelltt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHBWP20P90LVT' in the library 'N16ADFP_StdCelltt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHBWP20P90' in the library 'N16ADFP_StdCelltt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHBWP16P90LVT' in the library 'N16ADFP_StdCelltt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHBWP16P90' in the library 'N16ADFP_StdCelltt0p8v25c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:07     459.7      0.02       0.3      78.0                           10829.7129      0.00  
+    0:00:07     458.8      0.02       0.3      78.0                           10811.2930      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:07     458.8      0.02       0.3      78.0                           10811.2930      0.00  
+    0:00:07     458.8      0.02       0.3      78.0                           10811.2930      0.00  
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:08     377.1      0.03       0.5      78.0                           7540.7764      0.00  
+  Mapping 'mult_DW_mult_uns_2'
+    0:00:08     422.5      0.00       0.1      73.0                           9317.5957      0.00  
+    0:00:08     422.5      0.00       0.1      73.0                           9317.5957      0.00  
+    0:00:09     422.5      0.00       0.1      73.0                           9317.5957      0.00  
+    0:00:09     420.6      0.00       0.1      69.0                           9247.1631      0.00  
+    0:00:09     420.6      0.00       0.1      69.0                           9247.1631      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:09     417.4      0.00       0.0      69.0                           9158.2383      0.00  
+    0:00:09     417.9      0.00       0.0      69.0                           9198.0215      0.00  
+    0:00:09     417.9      0.00       0.0      69.0                           9198.0215      0.00  
+    0:00:09     417.9      0.00       0.0      69.0                           9198.0215      0.00  
+    0:00:09     417.9      0.00       0.0      69.0                           9198.0215      0.00  
+    0:00:09     418.1      0.00       0.0      69.0                           9221.5820      0.00  
+    0:00:09     418.1      0.00       0.0      69.0                           9221.5820      0.00  
+    0:00:10     427.3      0.00       0.0      69.0                           9575.6504      0.00  
+    0:00:10     427.3      0.00       0.0      69.0                           9575.6504      0.00  
+    0:00:10     427.4      0.00       0.0      69.0                           9583.2207      0.00  
+    0:00:10     427.4      0.00       0.0      69.0                           9583.2207      0.00  
+    0:00:10     427.4      0.00       0.0      69.0                           9583.2207      0.00  
+    0:00:10     427.4      0.00       0.0      69.0                           9583.2207      0.00  
+    0:00:10     427.4      0.00       0.0      69.0                           9583.2207      0.00  
+    0:00:10     427.4      0.00       0.0      69.0                           9583.2207      0.00  
+    0:00:10     427.4      0.00       0.0      69.0                           9583.2207      0.00  
+    0:00:10     427.4      0.00       0.0      69.0                           9583.2207      0.00  
+    0:00:10     427.4      0.00       0.0      69.0                           9583.2207      0.00  
+    0:00:10     427.4      0.00       0.0      69.0                           9583.2207      0.00  
+    0:00:10     427.4      0.00       0.0      69.0                           9583.2207      0.00  
+    0:00:10     427.4      0.00       0.0      69.0                           9583.2207      0.00  
+    0:00:10     427.4      0.00       0.0      69.0                           9583.2207      0.00  
+    0:00:10     427.4      0.00       0.0      69.0                           9583.2207      0.00  
+    0:00:10     427.4      0.00       0.0      69.0                           9583.2207      0.00  
+
+
+  Beginning Design Rule Fixing  (max_fanout)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:10     427.4      0.00       0.0      69.0                           9583.2207      0.00  
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:11     427.9      0.00       0.0       0.0                           9412.1846      0.00  
+    0:00:12     422.8      0.00       0.0       0.0                           9127.5020      0.00  
+    0:00:12     422.8      0.00       0.0       0.0                           9127.5020      0.00  
+    0:00:12     422.8      0.00       0.0       0.0                           9127.5020      0.00  
+    0:00:12     422.8      0.00       0.0       0.0                           9127.5020      0.00  
+    0:00:12     419.4      0.00       0.0       0.0                           8991.1914      0.00  
+    0:00:12     419.4      0.00       0.0       0.0                           8991.1914      0.00  
+    0:00:12     419.4      0.00       0.0       0.0                           8991.1914      0.00  
+    0:00:12     419.4      0.00       0.0       0.0                           8991.1914      0.00  
+    0:00:12     419.4      0.00       0.0       0.0                           8991.1914      0.00  
+    0:00:12     419.4      0.00       0.0       0.0                           8991.1914      0.00  
+    0:00:12     412.7      0.00       0.0       0.0                           8619.0791      0.00  
+CPU Load: 33%, Ram Free: 13 GB, Swap Free: 3 GB, Work Disk Free: 2066 GB, Tmp Disk Free: 14 GB
+Loading db file '/classes/ece5746/tsmcN16/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/N16ADFP_StdCelltt0p8v25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+CPU Load: 31%, Ram Free: 12 GB, Swap Free: 3 GB, Work Disk Free: 2066 GB, Tmp Disk Free: 14 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+# Generate structural verilog netlist
+write_file -hierarchy -format verilog -output "./output/${grp}/${top_level}.${clk_period}.${grp}.syn.v"
+Writing verilog file '/home/ab3394/cornell_tech/ASIC-Design/tsmcN16_ADFP/Lab2/synthesis/lab2/output/LVT20/mult.0.2684.LVT20.syn.v'.
+1
+# Save current design
+#write_file -hierarchy -format ddc -output "./output/${top_level}.${clk_period}.${grp}.ddc"
+# Generate Standard Delay Format (SDF) file
+write_sdf -context verilog "./output/${grp}/${top_level}.${clk_period}.syn.sdf"
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/ab3394/cornell_tech/ASIC-Design/tsmcN16_ADFP/Lab2/synthesis/lab2/output/LVT20/mult.0.2684.syn.sdf'. (WT-3)
+1
+# Generate timing constraints file
+write_sdc "./output/${grp}/${top_level}.${clk_period}.${grp}.syn.sdc"
+1
+# Generate report file
+set maxpaths 100
+100
+#set minpaths 100
+set rpt_file "./reports/${grp}/${top_level}.${clk_period}.${grp}.syn"
+./reports/LVT20/mult.0.2684.LVT20.syn
+check_design > ${rpt_file}.rpt
+report_area -hierarchy -designware >> ${rpt_file}_area.rpt
+report_power -hier -analysis_effort medium >> ${rpt_file}_power.rpt
+report_design >> ${rpt_file}.rpt
+report_cell >> ${rpt_file}.rpt
+report_port -verbose >> ${rpt_file}.rpt
+report_compile_options >> ${rpt_file}.rpt
+report_constraint -all_violators -verbose >> ${rpt_file}_violaters.rpt
+report_timing -path full -delay max -max_paths $maxpaths -nworst 100 >> ${rpt_file}_timing.rpt
+# Exit dc_shell
+quit
+
+Memory usage for this session 622 Mbytes.
+Memory usage for this session including child processes 868 Mbytes.
+CPU usage for this session 29 seconds ( 0.01 hours ).
+Elapsed time for this session 22 seconds ( 0.01 hours ).
+
+Thank you...
+

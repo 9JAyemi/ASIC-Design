@@ -1,0 +1,17 @@
+=== LVT16 worst slack per clock period (ns) ===
+LVT16  clk=0.244    slack (MET)                                         0.00
+LVT16  clk=0.2562    slack (MET)                                         0.00
+LVT16  clk=0.2684    slack (MET)                                         0.00
+LVT16  clk=0.2806    slack (MET)                                         0.00
+LVT16  clk=0.2928    slack (MET)                                         0.00
+LVT16  clk=0.305    slack (MET)                                         0.00
+LVT16  clk=0.3172    slack (MET)                                         0.00
+LVT16  clk=0.3416    slack (MET)                                         0.00
+LVT16  clk=0.366    slack (MET)                                         0.00
+LVT16  clk=0.427    slack (MET)                                         0.00
+LVT16  clk=0.488    slack (MET)                                         0.00
+LVT16  clk=0.732    slack (MET)                                         0.00
+LVT16  clk=1.22    slack (MET)                                         0.48
+LVT16  clk=2.44    slack (MET)                                         1.70
+LVT16  clk=24.4    slack (MET)                                        23.66
+LVT16  clk=244    slack (MET)                                       243.26
