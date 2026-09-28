@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : area
+Design : mult
+Version: V-2023.12-SP5
+Date   : Wed Sep 23 13:16:05 2026
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCelltt0p8v25c (File: /classes/ece5746/tsmcN16/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/N16ADFP_StdCelltt0p8v25c.db)
+
+Number of ports:                           66
+Number of nets:                           872
+Number of cells:                          717
+Number of combinational cells:            685
+Number of sequential cells:                32
+Number of macros/black boxes:               0
+Number of buf/inv:                        103
+Number of references:                      31
+
+Combinational area:                313.787528
+Buf/Inv area:                       16.640641
+Noncombinational area:              36.495361
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   350.282890
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+mult                               350.2829    100.0  313.7875    36.4954  0.0000  mult
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                 313.7875    36.4954  0.0000
+
+
+Area of detected synthetic parts
+--------------------------------
+  No DW parts to report!
+
+Total synthetic cell area:              0.0000  0.0%  
+
+1

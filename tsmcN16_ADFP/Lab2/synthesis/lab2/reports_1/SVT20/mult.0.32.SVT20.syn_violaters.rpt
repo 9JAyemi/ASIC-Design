@@ -1,0 +1,757 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : mult
+Version: V-2023.12-SP5
+Date   : Tue Sep 22 17:39:27 2026
+****************************************
+
+
+  Startpoint: inp_a[13] (input port clocked by clk)
+  Endpoint: prod_reg[20]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  inp_a[13] (in)                           0.01       0.02 f
+  U229/ZN (CKND2BWP20P90)                  0.01       0.03 r
+  U252/ZN (INVD4BWP20P90)                  0.01       0.03 f
+  U809/Z (XOR2D8BWP20P90)                  0.02       0.06 r
+  U500/ZN (CKND2D8BWP20P90)                0.01       0.07 f
+  U418/ZN (OAI22D4BWP20P90)                0.01       0.08 r
+  U724/ZN (XNR3D4BWP20P90)                 0.05       0.13 f
+  U595/ZN (XNR3D4BWP20P90)                 0.05       0.18 r
+  U275/ZN (XNR3D4BWP20P90)                 0.05       0.23 f
+  U274/ZN (ND2D4BWP20P90)                  0.01       0.24 r
+  U570/ZN (OAI21D4BWP20P90)                0.01       0.25 f
+  U291/ZN (AOI21D2BWP20P90)                0.01       0.26 r
+  U950/ZN (OAI21D4BWP20P90)                0.02       0.28 f
+  U1140/Z (CKBD1BWP20P90)                  0.02       0.29 f
+  U1143/ZN (XNR2D1BWP20P90)                0.02       0.31 r
+  prod_reg[20]/D (DFCNQD2BWP20P90)         0.00       0.31 r
+  data arrival time                                   0.31
+
+  clock clk (rise edge)                    0.32       0.32
+  clock network delay (ideal)              0.00       0.32
+  clock uncertainty                       -0.01       0.31
+  prod_reg[20]/CP (DFCNQD2BWP20P90)        0.00       0.31 r
+  library setup time                      -0.01       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.31
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: inp_a[1] (input port clocked by clk)
+  Endpoint: prod_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  inp_a[1] (in)                            0.01       0.02 r
+  U197/ZN (INVD4BWP20P90)                  0.01       0.03 f
+  U447/ZN (INVD4BWP20P90)                  0.01       0.04 r
+  U875/ZN (XNR2D1BWP20P90)                 0.02       0.06 f
+  U876/ZN (OAI22D1BWP20P90)                0.02       0.08 r
+  U472/Z (XOR2D2BWP20P90)                  0.03       0.11 f
+  U903/S (FA1D1BWP20P90)                   0.05       0.16 r
+  U184/ZN (NR2D2BWP20P90)                  0.01       0.17 f
+  U365/ZN (OAI21D2BWP20P90)                0.01       0.18 r
+  U364/ZN (CKND2D4BWP20P90)                0.01       0.19 f
+  U762/ZN (AOAI211D4BWP20P90)              0.01       0.21 r
+  U693/ZN (ND2D2BWP20P90)                  0.01       0.21 f
+  U665/ZN (ND2D2BWP20P90)                  0.01       0.22 r
+  U941/ZN (AOI21D4BWP20P90)                0.01       0.23 f
+  U696/ZN (OAI21D4BWP20P90)                0.01       0.24 r
+  U946/ZN (AOI21D4BWP20P90)                0.01       0.26 f
+  U950/ZN (OAI21D4BWP20P90)                0.02       0.27 r
+  U1048/ZN (AOI21D1BWP20P90)               0.02       0.29 f
+  U1058/Z (XOR2D1BWP20P90)                 0.02       0.31 r
+  prod_reg[29]/D (DFCNQD2BWP20P90)         0.00       0.31 r
+  data arrival time                                   0.31
+
+  clock clk (rise edge)                    0.32       0.32
+  clock network delay (ideal)              0.00       0.32
+  clock uncertainty                       -0.01       0.31
+  prod_reg[29]/CP (DFCNQD2BWP20P90)        0.00       0.31 r
+  library setup time                      -0.01       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.31
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: inp_a[1] (input port clocked by clk)
+  Endpoint: prod_reg[27]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  inp_a[1] (in)                            0.01       0.02 r
+  U197/ZN (INVD4BWP20P90)                  0.01       0.03 f
+  U447/ZN (INVD4BWP20P90)                  0.01       0.04 r
+  U875/ZN (XNR2D1BWP20P90)                 0.02       0.06 f
+  U876/ZN (OAI22D1BWP20P90)                0.02       0.08 r
+  U472/Z (XOR2D2BWP20P90)                  0.03       0.11 f
+  U903/S (FA1D1BWP20P90)                   0.05       0.16 r
+  U184/ZN (NR2D2BWP20P90)                  0.01       0.17 f
+  U365/ZN (OAI21D2BWP20P90)                0.01       0.18 r
+  U364/ZN (CKND2D4BWP20P90)                0.01       0.19 f
+  U762/ZN (AOAI211D4BWP20P90)              0.01       0.21 r
+  U693/ZN (ND2D2BWP20P90)                  0.01       0.21 f
+  U665/ZN (ND2D2BWP20P90)                  0.01       0.22 r
+  U941/ZN (AOI21D4BWP20P90)                0.01       0.23 f
+  U696/ZN (OAI21D4BWP20P90)                0.01       0.24 r
+  U946/ZN (AOI21D4BWP20P90)                0.01       0.26 f
+  U950/ZN (OAI21D4BWP20P90)                0.02       0.27 r
+  U1062/ZN (AOI21D1BWP20P90)               0.02       0.29 f
+  U1064/Z (XOR2D1BWP20P90)                 0.02       0.31 r
+  prod_reg[27]/D (DFCNQD2BWP20P90)         0.00       0.31 r
+  data arrival time                                   0.31
+
+  clock clk (rise edge)                    0.32       0.32
+  clock network delay (ideal)              0.00       0.32
+  clock uncertainty                       -0.01       0.31
+  prod_reg[27]/CP (DFCNQD2BWP20P90)        0.00       0.31 r
+  library setup time                      -0.01       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.31
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: inp_a[1] (input port clocked by clk)
+  Endpoint: prod_reg[23]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  inp_a[1] (in)                            0.01       0.02 r
+  U197/ZN (INVD4BWP20P90)                  0.01       0.03 f
+  U447/ZN (INVD4BWP20P90)                  0.01       0.04 r
+  U875/ZN (XNR2D1BWP20P90)                 0.02       0.06 f
+  U876/ZN (OAI22D1BWP20P90)                0.02       0.08 r
+  U472/Z (XOR2D2BWP20P90)                  0.03       0.11 f
+  U903/S (FA1D1BWP20P90)                   0.05       0.16 r
+  U184/ZN (NR2D2BWP20P90)                  0.01       0.17 f
+  U365/ZN (OAI21D2BWP20P90)                0.01       0.18 r
+  U364/ZN (CKND2D4BWP20P90)                0.01       0.19 f
+  U762/ZN (AOAI211D4BWP20P90)              0.01       0.21 r
+  U693/ZN (ND2D2BWP20P90)                  0.01       0.21 f
+  U665/ZN (ND2D2BWP20P90)                  0.01       0.22 r
+  U941/ZN (AOI21D4BWP20P90)                0.01       0.23 f
+  U696/ZN (OAI21D4BWP20P90)                0.01       0.24 r
+  U946/ZN (AOI21D4BWP20P90)                0.01       0.26 f
+  U950/ZN (OAI21D4BWP20P90)                0.02       0.27 r
+  U1162/ZN (AOI21D1BWP20P90)               0.02       0.29 f
+  U1165/Z (XOR2D1BWP20P90)                 0.02       0.31 r
+  prod_reg[23]/D (DFCNQD2BWP20P90)         0.00       0.31 r
+  data arrival time                                   0.31
+
+  clock clk (rise edge)                    0.32       0.32
+  clock network delay (ideal)              0.00       0.32
+  clock uncertainty                       -0.01       0.31
+  prod_reg[23]/CP (DFCNQD2BWP20P90)        0.00       0.31 r
+  library setup time                      -0.01       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.31
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: inp_a[1] (input port clocked by clk)
+  Endpoint: prod_reg[26]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  inp_a[1] (in)                            0.01       0.02 r
+  U197/ZN (INVD4BWP20P90)                  0.01       0.03 f
+  U447/ZN (INVD4BWP20P90)                  0.01       0.04 r
+  U875/ZN (XNR2D1BWP20P90)                 0.02       0.06 f
+  U876/ZN (OAI22D1BWP20P90)                0.02       0.08 r
+  U472/Z (XOR2D2BWP20P90)                  0.03       0.11 f
+  U903/S (FA1D1BWP20P90)                   0.05       0.16 r
+  U184/ZN (NR2D2BWP20P90)                  0.01       0.17 f
+  U365/ZN (OAI21D2BWP20P90)                0.01       0.18 r
+  U364/ZN (CKND2D4BWP20P90)                0.01       0.19 f
+  U762/ZN (AOAI211D4BWP20P90)              0.01       0.21 r
+  U693/ZN (ND2D2BWP20P90)                  0.01       0.21 f
+  U665/ZN (ND2D2BWP20P90)                  0.01       0.22 r
+  U941/ZN (AOI21D4BWP20P90)                0.01       0.23 f
+  U696/ZN (OAI21D4BWP20P90)                0.01       0.24 r
+  U946/ZN (AOI21D4BWP20P90)                0.01       0.26 f
+  U950/ZN (OAI21D4BWP20P90)                0.02       0.27 r
+  U1037/ZN (AOI21D1BWP20P90)               0.02       0.29 f
+  U1040/Z (XOR2D1BWP20P90)                 0.02       0.31 r
+  prod_reg[26]/D (DFCNQD2BWP20P90)         0.00       0.31 r
+  data arrival time                                   0.31
+
+  clock clk (rise edge)                    0.32       0.32
+  clock network delay (ideal)              0.00       0.32
+  clock uncertainty                       -0.01       0.31
+  prod_reg[26]/CP (DFCNQD2BWP20P90)        0.00       0.31 r
+  library setup time                      -0.01       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.31
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: inp_a[1] (input port clocked by clk)
+  Endpoint: prod_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  inp_a[1] (in)                            0.01       0.02 r
+  U197/ZN (INVD4BWP20P90)                  0.01       0.03 f
+  U447/ZN (INVD4BWP20P90)                  0.01       0.04 r
+  U875/ZN (XNR2D1BWP20P90)                 0.02       0.06 f
+  U876/ZN (OAI22D1BWP20P90)                0.02       0.08 r
+  U472/Z (XOR2D2BWP20P90)                  0.03       0.11 f
+  U903/S (FA1D1BWP20P90)                   0.05       0.16 r
+  U184/ZN (NR2D2BWP20P90)                  0.01       0.17 f
+  U365/ZN (OAI21D2BWP20P90)                0.01       0.18 r
+  U364/ZN (CKND2D4BWP20P90)                0.01       0.19 f
+  U762/ZN (AOAI211D4BWP20P90)              0.01       0.21 r
+  U693/ZN (ND2D2BWP20P90)                  0.01       0.21 f
+  U665/ZN (ND2D2BWP20P90)                  0.01       0.22 r
+  U941/ZN (AOI21D4BWP20P90)                0.01       0.23 f
+  U696/ZN (OAI21D4BWP20P90)                0.01       0.24 r
+  U946/ZN (AOI21D4BWP20P90)                0.01       0.26 f
+  U950/ZN (OAI21D4BWP20P90)                0.02       0.27 r
+  U1098/ZN (AOI21D1BWP20P90)               0.02       0.29 f
+  U1101/Z (XOR2D1BWP20P90)                 0.02       0.31 r
+  prod_reg[30]/D (DFCNQD2BWP20P90)         0.00       0.31 r
+  data arrival time                                   0.31
+
+  clock clk (rise edge)                    0.32       0.32
+  clock network delay (ideal)              0.00       0.32
+  clock uncertainty                       -0.01       0.31
+  prod_reg[30]/CP (DFCNQD2BWP20P90)        0.00       0.31 r
+  library setup time                      -0.01       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.31
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: inp_a[1] (input port clocked by clk)
+  Endpoint: prod_reg[25]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  inp_a[1] (in)                            0.01       0.02 r
+  U197/ZN (INVD4BWP20P90)                  0.01       0.03 f
+  U447/ZN (INVD4BWP20P90)                  0.01       0.04 r
+  U875/ZN (XNR2D1BWP20P90)                 0.02       0.06 f
+  U876/ZN (OAI22D1BWP20P90)                0.02       0.08 r
+  U472/Z (XOR2D2BWP20P90)                  0.03       0.11 f
+  U903/S (FA1D1BWP20P90)                   0.05       0.16 r
+  U184/ZN (NR2D2BWP20P90)                  0.01       0.17 f
+  U365/ZN (OAI21D2BWP20P90)                0.01       0.18 r
+  U364/ZN (CKND2D4BWP20P90)                0.01       0.19 f
+  U762/ZN (AOAI211D4BWP20P90)              0.01       0.21 r
+  U693/ZN (ND2D2BWP20P90)                  0.01       0.21 f
+  U665/ZN (ND2D2BWP20P90)                  0.01       0.22 r
+  U941/ZN (AOI21D4BWP20P90)                0.01       0.23 f
+  U696/ZN (OAI21D4BWP20P90)                0.01       0.24 r
+  U946/ZN (AOI21D4BWP20P90)                0.01       0.26 f
+  U950/ZN (OAI21D4BWP20P90)                0.02       0.27 r
+  U1092/ZN (AOI21D1BWP20P90)               0.02       0.29 f
+  U1094/Z (XOR2D1BWP20P90)                 0.02       0.31 r
+  prod_reg[25]/D (DFCNQD2BWP20P90)         0.00       0.31 r
+  data arrival time                                   0.31
+
+  clock clk (rise edge)                    0.32       0.32
+  clock network delay (ideal)              0.00       0.32
+  clock uncertainty                       -0.01       0.31
+  prod_reg[25]/CP (DFCNQD2BWP20P90)        0.00       0.31 r
+  library setup time                      -0.01       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.31
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: inp_a[1] (input port clocked by clk)
+  Endpoint: prod_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  inp_a[1] (in)                            0.01       0.02 r
+  U197/ZN (INVD4BWP20P90)                  0.01       0.03 f
+  U447/ZN (INVD4BWP20P90)                  0.01       0.04 r
+  U875/ZN (XNR2D1BWP20P90)                 0.02       0.06 f
+  U876/ZN (OAI22D1BWP20P90)                0.02       0.08 r
+  U472/Z (XOR2D2BWP20P90)                  0.03       0.11 f
+  U903/S (FA1D1BWP20P90)                   0.05       0.16 r
+  U184/ZN (NR2D2BWP20P90)                  0.01       0.17 f
+  U365/ZN (OAI21D2BWP20P90)                0.01       0.18 r
+  U364/ZN (CKND2D4BWP20P90)                0.01       0.19 f
+  U762/ZN (AOAI211D4BWP20P90)              0.01       0.21 r
+  U693/ZN (ND2D2BWP20P90)                  0.01       0.21 f
+  U665/ZN (ND2D2BWP20P90)                  0.01       0.22 r
+  U941/ZN (AOI21D4BWP20P90)                0.01       0.23 f
+  U696/ZN (OAI21D4BWP20P90)                0.01       0.24 r
+  U946/ZN (AOI21D4BWP20P90)                0.01       0.26 f
+  U950/ZN (OAI21D4BWP20P90)                0.02       0.27 r
+  U1023/ZN (AOI21D1BWP20P90)               0.02       0.29 f
+  U1034/Z (XOR2D1BWP20P90)                 0.02       0.31 r
+  prod_reg[28]/D (DFCNQD2BWP20P90)         0.00       0.31 r
+  data arrival time                                   0.31
+
+  clock clk (rise edge)                    0.32       0.32
+  clock network delay (ideal)              0.00       0.32
+  clock uncertainty                       -0.01       0.31
+  prod_reg[28]/CP (DFCNQD2BWP20P90)        0.00       0.31 r
+  library setup time                      -0.01       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.31
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: inp_a[1] (input port clocked by clk)
+  Endpoint: prod_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  inp_a[1] (in)                            0.01       0.02 r
+  U197/ZN (INVD4BWP20P90)                  0.01       0.03 f
+  U447/ZN (INVD4BWP20P90)                  0.01       0.04 r
+  U875/ZN (XNR2D1BWP20P90)                 0.02       0.06 f
+  U876/ZN (OAI22D1BWP20P90)                0.02       0.08 r
+  U472/Z (XOR2D2BWP20P90)                  0.03       0.11 f
+  U903/S (FA1D1BWP20P90)                   0.05       0.16 r
+  U184/ZN (NR2D2BWP20P90)                  0.01       0.17 f
+  U365/ZN (OAI21D2BWP20P90)                0.01       0.18 r
+  U364/ZN (CKND2D4BWP20P90)                0.01       0.19 f
+  U762/ZN (AOAI211D4BWP20P90)              0.01       0.21 r
+  U693/ZN (ND2D2BWP20P90)                  0.01       0.21 f
+  U665/ZN (ND2D2BWP20P90)                  0.01       0.22 r
+  U941/ZN (AOI21D4BWP20P90)                0.01       0.23 f
+  U696/ZN (OAI21D4BWP20P90)                0.01       0.24 r
+  U946/ZN (AOI21D4BWP20P90)                0.01       0.26 f
+  U950/ZN (OAI21D4BWP20P90)                0.02       0.27 r
+  U1080/ZN (AOI21D1BWP20P90)               0.02       0.29 f
+  U1089/Z (XOR2D1BWP20P90)                 0.02       0.31 r
+  prod_reg[31]/D (DFCNQD2BWP20P90)         0.00       0.31 r
+  data arrival time                                   0.31
+
+  clock clk (rise edge)                    0.32       0.32
+  clock network delay (ideal)              0.00       0.32
+  clock uncertainty                       -0.01       0.31
+  prod_reg[31]/CP (DFCNQD2BWP20P90)        0.00       0.31 r
+  library setup time                      -0.01       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.31
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: inp_a[1] (input port clocked by clk)
+  Endpoint: prod_reg[24]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  inp_a[1] (in)                            0.01       0.02 r
+  U197/ZN (INVD4BWP20P90)                  0.01       0.03 f
+  U447/ZN (INVD4BWP20P90)                  0.01       0.04 r
+  U875/ZN (XNR2D1BWP20P90)                 0.02       0.06 f
+  U876/ZN (OAI22D1BWP20P90)                0.02       0.08 r
+  U472/Z (XOR2D2BWP20P90)                  0.03       0.11 f
+  U903/S (FA1D1BWP20P90)                   0.05       0.16 r
+  U184/ZN (NR2D2BWP20P90)                  0.01       0.17 f
+  U365/ZN (OAI21D2BWP20P90)                0.01       0.18 r
+  U364/ZN (CKND2D4BWP20P90)                0.01       0.19 f
+  U762/ZN (AOAI211D4BWP20P90)              0.01       0.21 r
+  U693/ZN (ND2D2BWP20P90)                  0.01       0.21 f
+  U665/ZN (ND2D2BWP20P90)                  0.01       0.22 r
+  U941/ZN (AOI21D4BWP20P90)                0.01       0.23 f
+  U696/ZN (OAI21D4BWP20P90)                0.01       0.24 r
+  U946/ZN (AOI21D4BWP20P90)                0.01       0.26 f
+  U950/ZN (OAI21D4BWP20P90)                0.02       0.27 r
+  U1150/ZN (AOI21D1BWP20P90)               0.02       0.29 f
+  U1152/Z (XOR2D1BWP20P90)                 0.02       0.31 r
+  prod_reg[24]/D (DFCNQD2BWP20P90)         0.00       0.31 r
+  data arrival time                                   0.31
+
+  clock clk (rise edge)                    0.32       0.32
+  clock network delay (ideal)              0.00       0.32
+  clock uncertainty                       -0.01       0.31
+  prod_reg[24]/CP (DFCNQD2BWP20P90)        0.00       0.31 r
+  library setup time                      -0.01       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.31
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: inp_a[1] (input port clocked by clk)
+  Endpoint: prod_reg[22]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  inp_a[1] (in)                            0.01       0.02 r
+  U197/ZN (INVD4BWP20P90)                  0.01       0.03 f
+  U447/ZN (INVD4BWP20P90)                  0.01       0.04 r
+  U875/ZN (XNR2D1BWP20P90)                 0.02       0.06 f
+  U876/ZN (OAI22D1BWP20P90)                0.02       0.08 r
+  U472/Z (XOR2D2BWP20P90)                  0.03       0.11 f
+  U903/S (FA1D1BWP20P90)                   0.05       0.16 r
+  U184/ZN (NR2D2BWP20P90)                  0.01       0.17 f
+  U365/ZN (OAI21D2BWP20P90)                0.01       0.18 r
+  U364/ZN (CKND2D4BWP20P90)                0.01       0.19 f
+  U762/ZN (AOAI211D4BWP20P90)              0.01       0.21 r
+  U693/ZN (ND2D2BWP20P90)                  0.01       0.21 f
+  U665/ZN (ND2D2BWP20P90)                  0.01       0.22 r
+  U941/ZN (AOI21D4BWP20P90)                0.01       0.23 f
+  U696/ZN (OAI21D4BWP20P90)                0.01       0.24 r
+  U946/ZN (AOI21D4BWP20P90)                0.01       0.26 f
+  U950/ZN (OAI21D4BWP20P90)                0.02       0.27 r
+  U1144/ZN (AOI21D1BWP20P90)               0.02       0.29 f
+  U1147/Z (XOR2D1BWP20P90)                 0.02       0.31 r
+  prod_reg[22]/D (DFCNQD2BWP20P90)         0.00       0.31 r
+  data arrival time                                   0.31
+
+  clock clk (rise edge)                    0.32       0.32
+  clock network delay (ideal)              0.00       0.32
+  clock uncertainty                       -0.01       0.31
+  prod_reg[22]/CP (DFCNQD2BWP20P90)        0.00       0.31 r
+  library setup time                      -0.01       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.31
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: inp_a[1] (input port clocked by clk)
+  Endpoint: prod_reg[21]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 r
+  inp_a[1] (in)                            0.01       0.02 r
+  U197/ZN (INVD4BWP20P90)                  0.01       0.03 f
+  U447/ZN (INVD4BWP20P90)                  0.01       0.04 r
+  U875/ZN (XNR2D1BWP20P90)                 0.02       0.06 f
+  U876/ZN (OAI22D1BWP20P90)                0.02       0.08 r
+  U472/Z (XOR2D2BWP20P90)                  0.03       0.11 f
+  U903/S (FA1D1BWP20P90)                   0.05       0.16 r
+  U184/ZN (NR2D2BWP20P90)                  0.01       0.17 f
+  U365/ZN (OAI21D2BWP20P90)                0.01       0.18 r
+  U364/ZN (CKND2D4BWP20P90)                0.01       0.19 f
+  U762/ZN (AOAI211D4BWP20P90)              0.01       0.21 r
+  U693/ZN (ND2D2BWP20P90)                  0.01       0.21 f
+  U665/ZN (ND2D2BWP20P90)                  0.01       0.22 r
+  U941/ZN (AOI21D4BWP20P90)                0.01       0.23 f
+  U696/ZN (OAI21D4BWP20P90)                0.01       0.24 r
+  U946/ZN (AOI21D4BWP20P90)                0.01       0.26 f
+  U950/ZN (OAI21D4BWP20P90)                0.02       0.27 r
+  U1155/ZN (IAOI21D1BWP20P90)              0.01       0.29 f
+  U1157/Z (XOR2D1BWP20P90)                 0.02       0.31 r
+  prod_reg[21]/D (DFCNQD2BWP20P90)         0.00       0.31 r
+  data arrival time                                   0.31
+
+  clock clk (rise edge)                    0.32       0.32
+  clock network delay (ideal)              0.00       0.32
+  clock uncertainty                       -0.01       0.31
+  prod_reg[21]/CP (DFCNQD2BWP20P90)        0.00       0.31 r
+  library setup time                      -0.01       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.31
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+  Startpoint: inp_a[13] (input port clocked by clk)
+  Endpoint: prod_reg[19]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  inp_a[13] (in)                           0.01       0.02 f
+  U229/ZN (CKND2BWP20P90)                  0.01       0.03 r
+  U252/ZN (INVD4BWP20P90)                  0.01       0.03 f
+  U809/Z (XOR2D8BWP20P90)                  0.02       0.06 r
+  U500/ZN (CKND2D8BWP20P90)                0.01       0.07 f
+  U418/ZN (OAI22D4BWP20P90)                0.01       0.08 r
+  U724/ZN (XNR3D4BWP20P90)                 0.05       0.13 f
+  U595/ZN (XNR3D4BWP20P90)                 0.05       0.18 r
+  U275/ZN (XNR3D4BWP20P90)                 0.05       0.23 f
+  U274/ZN (ND2D4BWP20P90)                  0.01       0.24 r
+  U570/ZN (OAI21D4BWP20P90)                0.01       0.25 f
+  U151/Z (BUFFD2BWP20P90)                  0.01       0.26 f
+  U1103/ZN (INVD1BWP20P90)                 0.01       0.27 r
+  U1130/ZN (OAI21D1BWP20P90)               0.01       0.28 f
+  U1131/ZN (AOI21D1BWP20P90)               0.01       0.29 r
+  U1134/Z (XOR2D1BWP20P90)                 0.02       0.31 r
+  prod_reg[19]/D (DFCNQD2BWP20P90)         0.00       0.31 r
+  data arrival time                                   0.31
+
+  clock clk (rise edge)                    0.32       0.32
+  clock network delay (ideal)              0.00       0.32
+  clock uncertainty                       -0.01       0.31
+  prod_reg[19]/CP (DFCNQD2BWP20P90)        0.00       0.31 r
+  library setup time                      -0.01       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.31
+  -----------------------------------------------------------
+  slack (VIOLATED: increase significant digits)       0.00
+
+
+  Startpoint: inp_a[15] (input port clocked by clk)
+  Endpoint: prod_reg[18]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  inp_a[15] (in)                           0.01       0.02 f
+  U446/Z (BUFFD8BWP20P90)                  0.02       0.04 f
+  U817/Z (XOR2D8BWP20P90)                  0.02       0.06 r
+  U176/ZN (IND2D8BWP20P90)                 0.01       0.07 f
+  U661/Z (BUFFD4BWP20P90)                  0.02       0.09 f
+  U527/ZN (OAI22D4BWP20P90)                0.01       0.10 r
+  U566/ZN (INVD1BWP20P90)                  0.01       0.11 f
+  U565/ZN (XNR3D4BWP20P90)                 0.03       0.13 r
+  U351/Z (XOR3D4BWP20P90)                  0.05       0.18 r
+  U349/Z (XOR3D4BWP20P90)                  0.05       0.23 f
+  U320/ZN (NR2D2BWP20P90)                  0.01       0.24 r
+  U945/ZN (OAI21D2BWP20P90)                0.01       0.25 f
+  U946/ZN (AOI21D4BWP20P90)                0.01       0.26 r
+  U1102/ZN (INVD1BWP20P90)                 0.01       0.27 f
+  U1104/ZN (AOI21D1BWP20P90)               0.02       0.29 r
+  U1107/Z (XOR2D1BWP20P90)                 0.02       0.31 r
+  prod_reg[18]/D (DFCNQD2BWP20P90)         0.00       0.31 r
+  data arrival time                                   0.31
+
+  clock clk (rise edge)                    0.32       0.32
+  clock network delay (ideal)              0.00       0.32
+  clock uncertainty                       -0.01       0.31
+  prod_reg[18]/CP (DFCNQD2BWP20P90)        0.00       0.31 r
+  library setup time                      -0.01       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.31
+  -----------------------------------------------------------
+  slack (VIOLATED: increase significant digits)       0.00
+
+
+  Startpoint: inp_a[15] (input port clocked by clk)
+  Endpoint: prod_reg[17]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  inp_a[15] (in)                           0.01       0.02 f
+  U446/Z (BUFFD8BWP20P90)                  0.02       0.04 f
+  U817/Z (XOR2D8BWP20P90)                  0.02       0.06 r
+  U176/ZN (IND2D8BWP20P90)                 0.01       0.07 f
+  U661/Z (BUFFD4BWP20P90)                  0.02       0.09 f
+  U527/ZN (OAI22D4BWP20P90)                0.01       0.10 r
+  U566/ZN (INVD1BWP20P90)                  0.01       0.11 f
+  U565/ZN (XNR3D4BWP20P90)                 0.03       0.13 r
+  U351/Z (XOR3D4BWP20P90)                  0.05       0.18 r
+  U349/Z (XOR3D4BWP20P90)                  0.05       0.23 f
+  U320/ZN (NR2D2BWP20P90)                  0.01       0.24 r
+  U945/ZN (OAI21D2BWP20P90)                0.01       0.25 f
+  U946/ZN (AOI21D4BWP20P90)                0.01       0.26 r
+  U1102/ZN (INVD1BWP20P90)                 0.01       0.27 f
+  U1110/ZN (AOI21D1BWP20P90)               0.01       0.29 r
+  U1112/Z (XOR2D1BWP20P90)                 0.02       0.30 r
+  prod_reg[17]/D (DFCNQD1BWP20P90)         0.00       0.30 r
+  data arrival time                                   0.30
+
+  clock clk (rise edge)                    0.32       0.32
+  clock network delay (ideal)              0.00       0.32
+  clock uncertainty                       -0.01       0.31
+  prod_reg[17]/CP (DFCNQD1BWP20P90)        0.00       0.31 r
+  library setup time                      -0.01       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.30
+  -----------------------------------------------------------
+  slack (VIOLATED: increase significant digits)       0.00
+
+
+    Net: n147
+
+    max_fanout            16.00
+  - Fanout                17.00
+  ------------------------------
+    Slack                 -1.00  (VIOLATED)
+
+
+1

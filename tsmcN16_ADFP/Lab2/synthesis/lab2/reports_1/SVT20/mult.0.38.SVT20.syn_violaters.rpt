@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : mult
+Version: V-2023.12-SP5
+Date   : Tue Sep 22 17:37:58 2026
+****************************************
+
+
+  Startpoint: inp_a[0] (input port clocked by clk)
+  Endpoint: prod_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               ZeroWireload          N16ADFP_StdCelltt0p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.01       0.01 f
+  inp_a[0] (in)                            0.00       0.01 f
+  U125/ZN (INVD1BWP20P90)                  0.01       0.02 r
+  U783/ZN (INR2D1BWP20P90)                 0.01       0.03 f
+  prod_reg[0]/D (DFCNQD1BWP20P90)          0.00       0.03 f
+  data arrival time                                   0.03
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.01       0.01
+  prod_reg[0]/CP (DFCNQD1BWP20P90)         0.00       0.01 r
+  library hold time                        0.03       0.04
+  data required time                                  0.04
+  -----------------------------------------------------------
+  data required time                                  0.04
+  data arrival time                                  -0.03
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.01
+
+
+1
