@@ -1,0 +1,8 @@
+/home/ab3394/cornell_tech/ASIC-Design/tsmcN16_ADFP/Lab2/rtl/mul.sv {1 {vlog -work work -vopt -sv -stats=none /home/ab3394/cornell_tech/ASIC-Design/tsmcN16_ADFP/Lab2/rtl/mul.sv
+QuestaSim-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module mult
+
+Top level modules:
+	mult
+
+} {} {}}

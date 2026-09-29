@@ -3,7 +3,12 @@
 # load Design Compiler if this terminal hasn't already
 which dc_shell >& /dev/null
 if ($status != 0) then
-  source /usr/share/Modules/init/tcsh
+  # ecelinux uses /usr/share/Modules; other hosts may use lowercase /usr/share/modules
+  if (-e /usr/share/Modules/init/tcsh) then
+    source /usr/share/Modules/init/tcsh
+  else if (-e /usr/share/modules/init/tcsh) then
+    source /usr/share/modules/init/tcsh
+  endif
   module load synopsys/synopsys-dc
 endif
 which dc_shell >& /dev/null

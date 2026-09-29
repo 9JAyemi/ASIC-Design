@@ -1,0 +1,1 @@
+/opt/siemens/Questa/2024.2/questasim/linux_x86_64/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 393216 work.mult work.tb_mult -quiet -auto_acc_if_foreign -work work +acc -allow_unnamed -o _opt1 -id 1-00505690726d-6ab2e506-bff62-19eda +__design_bin_path+/home/ab3394/cornell_tech/ASIC-Design/tsmcN16_ADFP/Lab2 +__betafsm
