@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : area
+Design : mult
+Version: V-2023.12-SP5
+Date   : Wed Sep 23 13:16:26 2026
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCelltt0p8v25c (File: /classes/ece5746/tsmcN16/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/NLDM/N16ADFP_StdCelltt0p8v25c.db)
+
+Number of ports:                           66
+Number of nets:                           798
+Number of cells:                          625
+Number of combinational cells:            593
+Number of sequential cells:                32
+Number of macros/black boxes:               0
+Number of buf/inv:                        107
+Number of references:                      26
+
+Combinational area:                282.476166
+Buf/Inv area:                       16.744321
+Noncombinational area:              36.495361
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   318.971527
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+mult                               318.9715    100.0  282.4762    36.4954  0.0000  mult
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                 282.4762    36.4954  0.0000
+
+
+Area of detected synthetic parts
+--------------------------------
+  No DW parts to report!
+
+Estimated area of ungrouped synthetic parts
+-------------------------------------------
+                              Estimated  Perc. of
+  Module      Implem.  Count       Area cell area
+  ----------- -------  ----- ---------- ---------
+  DW_mult_uns apparch      1   254.4830     79.8%
+  ----------- -------  ----- ---------- ---------
+  Total:                   1   254.4830     79.8%
+
+Total synthetic cell area:              254.4830  79.8%  (estimated)
+
+1

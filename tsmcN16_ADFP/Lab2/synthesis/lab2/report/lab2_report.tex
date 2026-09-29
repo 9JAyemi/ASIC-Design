@@ -4,12 +4,12 @@
 \usepackage{amsmath}
 \usepackage[margin=1.25in]{geometry}
 \title{ECE 5746 Lab 2}
-\author{ab3394}
+\author{Abiola Bolaji}
 \date{}
 \begin{document}
 \maketitle
 
-\section*{2}
+\section*{1\quad RTL Design and Verification}
 
 \textbf{Design.} The multiplier (\texttt{mul.sv}, module \texttt{mult}) takes two 16-bit unsigned inputs \texttt{inp\_a} and \texttt{inp\_b} and registers their 32-bit product: on each rising edge of \texttt{clk}, \texttt{prod <= inp\_a * inp\_b}. An asynchronous, active-high \texttt{rst} clears \texttt{prod} to 0. The product is 32 bits wide, so the largest result ($\texttt{0xFFFF} \times \texttt{0xFFFF}$) fits without overflow. Because the output is registered, synthesis times the path from the input ports through the multiplier logic to the \texttt{prod} flip-flops, which is the critical path reported in \texttt{syn\_timing.rpt}.
 
@@ -35,13 +35,13 @@ applied (ns) & inp\_a & inp\_b & expected prod & decimal & prod updates (ns) \\
 \end{table}
 \begin{figure}[H]
 \centering
-\fbox{\parbox{0.9\textwidth}{\centering Waveform screenshot goes here (figures/rtl\_waveform.png)}}
-\caption{QuestaSim waveform of \texttt{tb\_mult}.}
+\includegraphics[width=\textwidth]{figures/rtl_waveform.png}
+\caption{QuestaSim waveform of \texttt{tb\_mult}: inputs, registered product, clock and reset.}
 \label{fig:rtl}
 \end{figure}
 \textbf{Result.} All 5 products match the expected values. While \texttt{rst} is high, \texttt{prod} stays at 0, so the first product appears at 15\,ns, on the first rising edge after reset is released. After that, each new product appears on the first rising edge after the inputs change, which is the one-register latency of the design. $\texttt{0xFFFF} \times \texttt{0xFFFF} = \texttt{0xFFFE0001}$ confirms the full 32-bit result is kept.
 
-\section*{3}
+\section*{2\quad SVT20: Fmax and Energy Sweep}
 
 For the standard-$V_t$ cells (BWP20P90), I swept the clock period in \texttt{lab2.sh} and checked the worst slack in \texttt{syn\_timing.rpt}. I use $clk\_period_{min} = 0.33$\,ns (chosen at 0.01\,ns precision; a finer search showed 0.327\,ns also meets timing), so $F_{max} = 1/0.33\,\text{ns} = 3030$\,MHz. I then synthesized the design at $1\times$ to $1000\times$ this clock period.
 
@@ -79,7 +79,7 @@ $\times$ min & clk (ns) & f (MHz) & slack (ns) & area ($\mu m^2$) & $E_{Dyn}$ (p
 \end{figure}
 The minimum total energy is 0.5226\,pJ/cycle at 303\,MHz (3.3\,ns, $10\times$). At $F_{max}$ it is 0.9230\,pJ/cycle.
 
-\section*{4}
+\section*{3\quad LVT20: Fmax and Energy Sweep}
 
 For the low-$V_t$ cells (BWP20P90LVT), I swept the clock period in \texttt{lab2.sh} and checked the worst slack in \texttt{syn\_timing.rpt}. I use $clk\_period_{min} = 0.244$\,ns (0.244\,ns meets timing and 0.242\,ns does not), so $F_{max} = 1/0.244\,\text{ns} = 4098$\,MHz. I then synthesized the design at $1\times$ to $1000\times$ this clock period.
 
@@ -117,7 +117,7 @@ $\times$ min & clk (ns) & f (MHz) & slack (ns) & area ($\mu m^2$) & $E_{Dyn}$ (p
 \end{figure}
 The minimum total energy is 0.5699\,pJ/cycle at 410\,MHz (2.44\,ns, $10\times$). At $F_{max}$ it is 0.9927\,pJ/cycle.
 
-\section*{5}
+\section*{4\quad LVT16: Fmax and Energy Sweep}
 
 For the low-$V_t$ cells (BWP16P90LVT), I swept the clock period in \texttt{lab2.sh} and checked the worst slack in \texttt{syn\_timing.rpt}. I use $clk\_period_{min} = 0.22$\,ns (chosen at 0.01\,ns precision: 0.22\,ns meets timing and 0.21\,ns does not), so $F_{max} = 1/0.22\,\text{ns} = 4545$\,MHz. I then synthesized the design at $1\times$ to $1000\times$ this clock period.
 
@@ -155,7 +155,7 @@ $\times$ min & clk (ns) & f (MHz) & slack (ns) & area ($\mu m^2$) & $E_{Dyn}$ (p
 \end{figure}
 The minimum total energy is 0.5662\,pJ/cycle at 909\,MHz (1.1\,ns, $5\times$). At $F_{max}$ it is 1.2191\,pJ/cycle.
 
-\section*{6}
+\section*{5\quad PPA Trends and Optimal Operating Frequency}
 
 Below I discuss the performance, power and area trends for each graph, using \texttt{syn\_area.rpt}, \texttt{syn\_timing.rpt}, \texttt{syn\_power.rpt} and the cell list in \texttt{syn.rpt}. Figure~\ref{fig:ppa} summarizes how the netlist changes with frequency.
 
