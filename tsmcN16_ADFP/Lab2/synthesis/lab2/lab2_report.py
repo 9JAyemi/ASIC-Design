@@ -22,11 +22,19 @@ import plot_energy as pe
 
 # ---------------------------------------------------------------- settings
 TITLE = "ECE 5746 Lab 2"
-AUTHOR = "ab3394"
+AUTHOR = "Abiola Bolaji"
 # problem number that each library's sweep answers, and the PPA discussion question
-PROBLEMS = {"SVT20": "3", "LVT20": "4", "LVT16": "5"}
-DISCUSSION = "6"
-RTL_SECTION = "2"   # problem number for the RTL design and testbench
+PROBLEMS = {"SVT20": "2", "LVT20": "3", "LVT16": "4"}
+DISCUSSION = "5"
+RTL_SECTION = "1"   # problem number for the RTL design and testbench
+# heading text shown after each problem number (edit freely)
+HEADINGS = {
+    "RTL": "RTL Design and Verification",
+    "SVT20": "SVT20: Fmax and Energy Sweep",
+    "LVT20": "LVT20: Fmax and Energy Sweep",
+    "LVT16": "LVT16: Fmax and Energy Sweep",
+    "DISCUSSION": "PPA Trends and Optimal Operating Frequency",
+}
 # save your QuestaSim waveform screenshot here (report/figures/rtl_waveform.png)
 WAVEFORM = "rtl_waveform.png"
 # how each clk_period_min was chosen (shown in the report)
@@ -57,7 +65,7 @@ def rtl_section():
     hold = int(hold.group(1)) if hold else 20
     half = int(re.search(r"forever\s*#(\d+)\s*clk", tb).group(1))
     rst_len = int(re.search(r"rst\s*=\s*1;\s*#(\d+)\s*rst\s*=\s*0", tb).group(1))
-    L = [rf"\section*{{{RTL_SECTION}}}", ""]
+    L = [heading(RTL_SECTION, HEADINGS.get("RTL", "")), ""]
     L.append(
         "\\textbf{Design.} The multiplier (\\texttt{mul.sv}, module \\texttt{mult}) takes two 16-bit unsigned "
         "inputs \\texttt{inp\\_a} and \\texttt{inp\\_b} and registers their 32-bit product: on each rising "
@@ -111,6 +119,11 @@ def rtl_section():
     return L
 
 
+def heading(num, title):
+    """Unnumbered section heading: problem number, then its title."""
+    return rf"\section*{{{num}\quad {title}}}" if title else rf"\section*{{{num}}}"
+
+
 def tex(s):
     """Escape text for LaTeX."""
     for a, b in (("\\", r"\textbackslash{}"), ("_", r"\_"), ("%", r"\%"), ("&", r"\&"),
@@ -147,7 +160,7 @@ def sweep_section(g, rows):
     f = rows[0]
     p = ppa.picks(rows)
     e = p["energy"]
-    L = [rf"\section*{{{PROBLEMS.get(g, '')}}}", ""]
+    L = [heading(PROBLEMS.get(g, ""), HEADINGS.get(g, g)), ""]
     L.append(
         f"For the {LIB_DESC.get(g, g)}, I swept the clock period in \\texttt{{lab2.sh}} and checked the "
         f"worst slack in \\texttt{{syn\\_timing.rpt}}. I use "
@@ -332,7 +345,7 @@ def main():
     L += rtl_section()
     for g, rows in data.items():
         L += sweep_section(g, rows)
-    L += [rf"\section*{{{DISCUSSION}}}", "",
+    L += [heading(DISCUSSION, HEADINGS.get("DISCUSSION", "")), "",
           "Below I discuss the performance, power and area trends for each graph, using "
           "\\texttt{syn\\_area.rpt}, \\texttt{syn\\_timing.rpt}, \\texttt{syn\\_power.rpt} and the cell list in "
           "\\texttt{syn.rpt}. Figure~\\ref{fig:ppa} summarizes how the netlist changes with frequency.", ""]
@@ -356,13 +369,19 @@ def main():
             z.write(os.path.join(FIG, name), f"figures/{name}")
     print(f"wrote {os.path.relpath(tex_path, HERE)} and {os.path.relpath(zip_path, HERE)}")
 
-    if shutil.which("pdflatex"):
+    # build the PDF with tectonic (installed in ~/.local/bin) or pdflatex, whichever is found
+    pdf = os.path.relpath(os.path.join(OUT, "lab2_report.pdf"), HERE)
+    tectonic = shutil.which("tectonic") or shutil.which(os.path.expanduser("~/.local/bin/tectonic"))
+    if tectonic:
+        r = subprocess.run([tectonic, "-X", "compile", "lab2_report.tex"], cwd=OUT)
+        print(f"built {pdf}" if r.returncode == 0 else "tectonic failed - see the errors above")
+    elif shutil.which("pdflatex"):
         for _ in range(2):
             subprocess.run(["pdflatex", "-interaction=nonstopmode", "lab2_report.tex"], cwd=OUT,
                            stdout=subprocess.DEVNULL)
-        print(f"built {os.path.relpath(os.path.join(OUT, 'lab2_report.pdf'), HERE)}")
+        print(f"built {pdf}")
     else:
-        print("pdflatex not found: upload report/lab2_report.zip to Overleaf (New Project > Upload Project)")
+        print("no LaTeX compiler found: upload report/lab2_report.zip to Overleaf (New Project > Upload Project)")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,17 @@
+=== SVT20 worst slack per clock period (ns) ===
+SVT20  clk=0.33    slack (MET)                                         0.00
+SVT20  clk=0.3465    slack (MET)                                         0.00
+SVT20  clk=0.363    slack (MET)                                         0.00
+SVT20  clk=0.3795    slack (MET)                                         0.00
+SVT20  clk=0.396    slack (MET)                                         0.00
+SVT20  clk=0.4125    slack (MET)                                         0.00
+SVT20  clk=0.429    slack (MET)                                         0.00
+SVT20  clk=0.462    slack (MET)                                         0.00
+SVT20  clk=0.495    slack (MET)                                         0.00
+SVT20  clk=0.5775    slack (MET)                                         0.00
+SVT20  clk=0.66    slack (MET)                                         0.00
+SVT20  clk=0.99    slack (MET)                                         0.00
+SVT20  clk=1.65    slack (MET)                                         0.51
+SVT20  clk=3.3    slack (MET)                                         2.16
+SVT20  clk=33    slack (MET)                                        31.86
+SVT20  clk=330    slack (MET)                                       328.87
