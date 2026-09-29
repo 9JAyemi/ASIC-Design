@@ -1,0 +1,29 @@
+# //  Questa Sim-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading project counter
+vsim work.tb_counter -voptargs=+acc
+# vsim work.tb_counter -voptargs="+acc" 
+# Start time: 10:19:47 on Sep 14,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.tb_counter(fast)
+# Loading work.counter(fast)
+# Loading work.dff(fast)
+add wave -r sim:/tb_counter/*
+run -all
+# ** Note: $finish    : /home/aa2483/asap7_rundir/synthesis/rtl/tb_counter.sv(45)
+#    Time: 183 ps  Iteration: 0  Instance: /tb_counter
+# 1
+# Break in Module tb_counter at /home/aa2483/asap7_rundir/synthesis/rtl/tb_counter.sv line 45

@@ -30,6 +30,16 @@ initial begin
     inp_a = 16'h0003;
     inp_b = 16'h0004;
     #20;
+    inp_a = 16'h0000;
+    inp_b = 16'h0000;
+    #20;
+    inp_a = 16'hffff;
+    inp_b = 16'hffff;
+    #20;
+    inp_a = 16'h00c0;
+    inp_b = 16'h0acf;
+    #20;
+    #20;
     $finish;
 end
 
