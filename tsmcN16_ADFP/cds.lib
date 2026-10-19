@@ -1,3 +1,6 @@
 DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic
 DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
 DEFINE tsmcN16 /classes/ece5746/tsmcN16/Executable_Package/Collaterals/Tech/iPDK/N16ADFP_iPDK/tsmcN16
+# technology library attached by streamIn.sh (-attachTechFileOfLib tsmcN16_online); same folder as its layer map
+DEFINE tsmcN16_online /classes/ece5746/tsmcN16/Executable_Package/Collaterals/Tech/iPDK/N16ADFP_iPDK/Techfile/online/1P11M_2Xa1Xd_h_3Xe_vhv_2Y2R/techfile_lib_laker/tsmcN16
+DEFINE mult_streamin /home/ab3394/cornell_tech/ASIC-Design/tsmcN16_ADFP/mult_streamin
