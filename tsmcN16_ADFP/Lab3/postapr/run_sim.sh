@@ -43,8 +43,9 @@ done
 module load siemens/questasim 2>/dev/null || true
 cd "$HERE"
 LIB="work_$mode${clk:+_$clk}"
-rm -rf "$LIB"
-vlib "$LIB" >/dev/null
+# reuse the library if it exists (vlog recompiles every module into it); deleting it fails
+# while an earlier QuestaSim window for the same mode is still open
+[ -d "$LIB" ] || vlib "$LIB" >/dev/null
 # -timescale gives the testbench (which has none) the same 1ns/1ps as the cell models
 vlog -work "$LIB" -sv -timescale 1ns/1ps "$STDCELL" "$NETLIST" "$TB"
 

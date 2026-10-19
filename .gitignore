@@ -33,6 +33,9 @@ transcript
 *.cr.mti
 tcl_stacktrace.txt
 sim_*.log
+etch[0-9]*
+wlft*
+.nfs*
 
 # --- Virtuoso / Cadence ---
 .cadence/

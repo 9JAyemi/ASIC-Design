@@ -1,0 +1,99 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{float}
+\title{ECE 5746 Lab 3 Datasheet\\\large 16-bit Registered Multiplier (\texttt{mult}), TSMC N16 SVT20}
+\author{Abiola Bolaji (ab3394)}
+\date{}
+\begin{document}
+\maketitle
+
+\section*{Design summary}
+\begin{center}\small
+\begin{tabular}{l|l}
+\hline
+Parameter & Value \\
+\hline
+Cell library & SVT20 (\texttt{BWP20P90}) only, as in Lab 2 \\
+\# of standard cells (total) & 2321 \\
+\quad functional (logic, flip-flops, buffers, clock tree) & 933 \\
+\quad physical (filler, well-tap, boundary) & 1388 \\
+Macros & 0 \\
+Core area & 745.563\,$\mu m^2$ \\
+Chip area & 745.563\,$\mu m^2$ (no core-to-die margin) \\
+Die size & 27.54\,$\mu m$ $\times$ 27.07\,$\mu m$ \\
+Functional cell area & 396.991\,$\mu m^2$ (synthesis: 371.796\,$\mu m^2$) \\
+Core density (excl.\ physical cells) & 53.2\% \\
+\textbf{clk\_per\_syn} & \textbf{0.396\,ns} ($1.20 \times 0.33$\,ns; 2525\,MHz) \\
+\textbf{clk\_per\_apr} & \textbf{0.7\,ns} (1429\,MHz) \\
+Critical path delay (post-route) & 0.554\,ns (\texttt{inp\_a[7]}$\rightarrow$\texttt{prod\_reg[30]}) \\
+Worst setup slack / hold slack & +0.109\,ns / +0.049\,ns \\
+Routing & M2--M7, utilization 0.5, total wire length 4241\,$\mu m$ \\
+Pins & 34 inputs on west edge, 32 outputs on east edge \\
+\hline
+\end{tabular}
+\end{center}
+
+\section*{Post-route timing (clock period 0.7\,ns)}
+Setup is checked at the slow corner (ss, 0.72\,V, $-40\,^\circ$C, Cworst) and hold at the fast
+corner (ff, 0.88\,V, 125\,$^\circ$C, Cbest). Full reports: \texttt{mult.apr\_wc3\_timing.txt},
+\texttt{mult.apr\_bc3\_timing.txt}.
+
+\begin{center}\small
+\begin{tabular}{c|l|r|r|r}
+\hline
+\multicolumn{5}{c}{3 worst setup paths} \\
+\hline
+Path & Start $\rightarrow$ end & Arrival (ns) & Required (ns) & Slack (ns) \\
+\hline
+1 & \texttt{inp\_a[7]} $\rightarrow$ \texttt{prod\_reg[30]/D} & 0.554 & 0.662 & 0.109 \\
+2 & \texttt{inp\_a[7]} $\rightarrow$ \texttt{prod\_reg[31]/D} & 0.553 & 0.662 & 0.109 \\
+3 & \texttt{inp\_a[7]} $\rightarrow$ \texttt{prod\_reg[28]/D} & 0.553 & 0.662 & 0.110 \\
+\hline
+\multicolumn{5}{c}{3 worst hold paths} \\
+\hline
+1 & \texttt{prod\_reg[19]/Q} $\rightarrow$ \texttt{prod[19]} & 0.049 & 0.000 & 0.049 \\
+2 & \texttt{prod\_reg[2]/Q} $\rightarrow$ \texttt{prod[2]} & 0.050 & 0.000 & 0.050 \\
+3 & \texttt{prod\_reg[20]/Q} $\rightarrow$ \texttt{prod[20]} & 0.050 & 0.000 & 0.050 \\
+\hline
+\end{tabular}
+\end{center}
+
+\section*{Finding clk\_per\_apr}
+APR used the netlist synthesized at clk\_per\_syn = 0.396\,ns; only the APR clock period in
+\texttt{var.tcl} was changed. From the 0.6\,ns run on, Innovus was restricted to SVT20 cells
+(\texttt{setDontUse *LVT*}, \texttt{*BWP16P90*}) to match the Lab 2 synthesis; the first run
+(0.396\,ns) had no restriction, and Innovus swapped most cells to LVT16. A 0.5\,ns run without the
+restriction was also clean, but only because 530 cells were LVT16, so it does not count for SVT20.
+
+\begin{center}\small
+\begin{tabular}{r|r|r|r|p{4.6cm}}
+\hline
+APR clock (ns) & Setup WNS (ns) & Cell area ($\mu m^2$) & Core density & Result \\
+\hline
+0.396$^*$ & +0.095 & 676.7 & 108.6\% & core overfilled, cells overlap: not legal \\
+0.6 & +0.095 & 670.7 & 108.1\% & core overfilled, cells overlap: not legal \\
+\textbf{0.7} & \textbf{+0.109} & \textbf{397.0} & \textbf{53.2\%} & \textbf{clean} (clk\_per\_apr) \\
+0.8 & +0.109 & 372.2 & 49.9\% & clean \\
+\hline
+\end{tabular}
+
+{\footnotesize $^*$ before the SVT20 restriction (mixed $V_t$).}
+\end{center}
+At 0.396 and 0.6\,ns, Innovus met setup on paper only by upsizing the logic until it no longer fit
+the core (``Density too high'' placement errors, about 200 DRC shorts and open signal nets).
+Synthesis timed the design at the typical corner with ideal wires and clock; APR times it at the
+slow corner with routed wires and a real clock tree, so the legal APR clock is longer.
+0.7\,ns is the shortest period tested with a legal, routed, timing-clean layout.
+
+\section*{Verification}
+\begin{itemize}
+\item \textbf{DRC} (\texttt{verify\_drc}): 28 violations, all VDD/VSS power stripes extending past the
+die edge (``Out Of Die'', M2--M5) because the floorplan has no core margin.
+\item \textbf{LVS} (\texttt{verifyConnectivity}): issues only on power: 92 unconnected well-tap
+\texttt{VPP} pins and VDD/VSS segments; no signal net is open.
+\item \textbf{Post-layout simulation}: \texttt{mult.apr.v} with \texttt{mult.sdf} (max delays)
+and the Lab 2 testbench gives all five expected products (0x2, 0xc, 0x0, 0xfffe0001, 0x81b40),
+each about 0.13--0.15\,ns after the clock edge.
+\end{itemize}
+\end{document}
