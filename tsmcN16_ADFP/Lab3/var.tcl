@@ -14,8 +14,11 @@ set utilization 0.5
 # example_innovus.tcl redefines the clock with this period after loading the SDC.
 # Run 1: 0.396 ns met setup only by overfilling the core (108.6% density, overlapping
 #        cells, 211 DRC / 150 LVS errors); reports saved in report_0.396/.
-# Run 2: 0.5 ns (less upsizing at the slow corner so the design fits the floorplan).
-set clock_period 0.5
+# Run 2: 0.5 ns clean, but Innovus had swapped 530 cells to LVT16 (no dont_use in APR);
+#        reports saved in report_0.5/.
+# From run 3 on, example_innovus.tcl keeps the design SVT20 (setDontUse *LVT* *BWP16P90*),
+# so the earlier runs are not comparable. Run 3: 0.6 ns; then tighten or relax.
+set clock_period 0.6
 
 
 
@@ -66,12 +69,13 @@ set tapCell {{TAPCELLBWP20P90LVT_VPP_VSS rule 50.76}}
 
 #------------------------CTS-------------------------
 ### Clock Tree Cell Type
-set clockInvertors "CKND16BWP16P90LVT CKND12BWP16P90LVT CKND8BWP16P90LVT CKND4BWP16P90LVT CKND2BWP16P90LVT"
+# SVT20 clock cells (were BWP16P90LVT / BWP16P90, which are now dont_use)
+set clockInvertors "CKND16BWP20P90 CKND12BWP20P90 CKND8BWP20P90 CKND4BWP20P90 CKND2BWP20P90"
 
-set clockBuffers "CKBD1BWP16P90 CKBD1BWP16P90 CKBD2BWP16P90 CKBD2BWP16P90 CKBD4BWP16P90 CKBD4BWP16P90 CKBD8BWP16P90 CKBD8BWP16P90 CKBD12BWP16P90 CKBD12BWP16P90 CKBD16BWP16P90 CKBD16BWP16P90"
+set clockBuffers "CKBD1BWP20P90 CKBD2BWP20P90 CKBD4BWP20P90 CKBD8BWP20P90 CKBD12BWP20P90 CKBD16BWP20P90"
 
-### Hold Fixing Cell Type
-set holdFixCell "BUFFD1BWP20P90 BUFFD1BWP20P90LVT BUFFD2BWP20P90 BUFFD2BWP20P90LVT DEL025D1BWP20P90 DEL050D1BWP20P90 DEL075D1BWP20P90 DEL025D1BWP20P90LVT DEL050D1BWP20P90LVT DEL075D1BWP20P90LVT"
+### Hold Fixing Cell Type (SVT20 only; not used by example_innovus.tcl, kept consistent)
+set holdFixCell "BUFFD1BWP20P90 BUFFD2BWP20P90 DEL025D1BWP20P90 DEL050D1BWP20P90 DEL075D1BWP20P90"
 
 ### Tie Cell Type
 set tieCell "TIEHBWP20P90 TIELBWP20P90"

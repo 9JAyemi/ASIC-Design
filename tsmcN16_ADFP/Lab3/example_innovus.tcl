@@ -100,6 +100,12 @@ addWellTap -cellInterval 50.76 -prefix WELLTAP
 
 #verifyWellTap -report ./report/reportWellTap.rpt
 
+### Keep the design SVT20 (BWP20P90), same as the Lab 2 synthesis (dont_use *LVT* *BWP16*).
+### Set after the LVT boundary/tap cells are placed, so it only limits the cells that
+### placement, CTS, hold fixing and post-route optimization can insert or swap in.
+setDontUse *LVT* true
+setDontUse *BWP16P90* true
+
 connect_std_cells_to_power
 
 saveDesign ./savedDesigns/${designName}.pre_power.enc
